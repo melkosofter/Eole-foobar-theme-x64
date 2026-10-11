@@ -393,7 +393,7 @@ function on_mouse_lbtn_dblclk(x, y) {
 				showNowPlaying(true);
 			break;
 			case (properties.dble_click_action==2):
-				if(!g_cover.isFiller()) openCoverFullscreen(fb.GetNowPlaying());
+				if(!g_cover.isFiller()) openCoverFullscreen(fb.GetNowPlaying(), g_cover.isFiller() ? null : g_cover.artwork);
 			break;
 			case (properties.dble_click_action==3):
 				fb.RunContextCommandWithMetadb("Open containing folder", fb.GetNowPlaying(), 8);
@@ -992,7 +992,7 @@ function on_mouse_rbtn_up(x, y) {
         window.Reload();
         break;
       case 1:
-        openCoverFullscreen(fb.GetNowPlaying());
+        openCoverFullscreen(fb.GetNowPlaying(), g_cover.isFiller() ? null : g_cover.artwork);
         break;
       case 2:
         properties.random_function = '20_albums';

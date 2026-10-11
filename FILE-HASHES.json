@@ -9,7 +9,7 @@
   },
   {
     "path": "CHANGELOG.md",
-    "sha256": "743ababd6e6a507a361e2777fa7841b78c051716747b8be3a85430f8d4e5c235"
+    "sha256": "bb0fcbf440d5e8502b0dd064ea2f2fd66c4e6e9b9bbcbdff3fcd41d8873e361e"
   },
   {
     "path": "components-manifest.json",
@@ -5405,7 +5405,7 @@
   },
   {
     "path": "themes/eole/js/JStheme_common.js",
-    "sha256": "a25f3e1a7f102b3297d614f13bf0eb7444ab8da61ae7a8a7853fd004b1574fb7"
+    "sha256": "6e3252d8e7d941ade014971702e74d6a13b53b4602f81dfa07ccfa2bfa71d438"
   },
   {
     "path": "themes/eole/js/SMPbiography.js",
@@ -5417,7 +5417,7 @@
   },
   {
     "path": "themes/eole/js/WSHcoverpanel.js",
-    "sha256": "c99bb49468e9357e129cf0bbded665c5ded839628a31f768ef9c55e313f32b40"
+    "sha256": "0a46b176da224cd0714f51a4d205315a811341aab65152f9b02527a9e3e551c5"
   },
   {
     "path": "themes/eole/js/WSHfilter.js",
@@ -5441,7 +5441,7 @@
   },
   {
     "path": "themes/eole/js/WSHnowplaying.js",
-    "sha256": "0b3db02155e72b40f2c72d7155771ad4ae0995368fd3cdef3c59f1471c2d3a2c"
+    "sha256": "565383487286aa85795138e4144e28a64202fc82402201bb929274dacd9f2b31"
   },
   {
     "path": "themes/eole/js/WSHplaylistheader.js",

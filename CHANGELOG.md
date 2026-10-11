@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1 — 2026-10-11
+
+- Fix double-click and context-menu cover opening when the displayed artwork comes from the cache and the track has no retrievable front cover. Use the displayed image as a fallback and handle missing art, failed saves and unavailable image viewers without crashing the panel.
+
 ## 1.0.0 — 2026-10-11
 
 - Adapt Eole 1.2.3b24 to foobar2000 2.x x64 with JSplitter and an 18-panel layout (16 Eole script panels, MilkDrop and ESLyric).

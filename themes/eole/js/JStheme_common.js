@@ -3433,16 +3433,25 @@ function FormatWallpaper(image, iw, ih, interpolation_mode, display_mode, angle,
         return tmp_img;
     };
 };
-function openCoverFullscreen(metadb){
-	var img = utils.GetAlbumArtV2(metadb, 0, false);
-	var filepath = cover_img_cache+"\\original_size."+globalProperties.ImageCacheExt;
-	img.SaveAs(filepath, globalProperties.ImageCacheFileType);
-	var WshShell = new ActiveXObject("WScript.Shell");		
+function openCoverFullscreen(metadb, displayedImage){
+	var img = null;
+	if(isValidHandle(metadb)) {
+		try { img = utils.GetAlbumArtV2(metadb, 0, false); } catch(e) {}
+	}
+	// The panel may show cached/downloaded art that is absent from the track.
+	if(!isImage(img)) img = displayedImage;
+	if(!isImage(img) || typeof img.SaveAs !== 'function') return false;
 	try {
+		if(!g_files.FolderExists(cover_img_cache)) g_files.CreateFolder(cover_img_cache);
+		var filepath = cover_img_cache+"\\original_size."+globalProperties.ImageCacheExt;
+		if(!img.SaveAs(filepath, globalProperties.ImageCacheFileType)) return false;
+		var WshShell = new ActiveXObject("WScript.Shell");
 		WshShell.Run("\"" + filepath + "\"");
+		return true;
 	} catch(e) {
-		//HtmlMsg("Error", "Image not found, this cover is probably embedded inside the audio file."+filepath,"Ok");
-	}		
+		console.log("Eole: could not open cover image: " + e);
+		return false;
+	}
 }
 // Debugger functions
 function debugger_hint(string){
