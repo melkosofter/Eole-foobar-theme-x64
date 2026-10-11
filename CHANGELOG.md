@@ -2,6 +2,7 @@
 
 ## 1.0.1 — 2026-10-11
 
+- Publish installation and configuration documentation in English only, including the complete guide and bundled OpenHacks notes.
 - Fix double-click and context-menu cover opening when the displayed artwork comes from the cache and the track has no retrievable front cover. Use the displayed image as a fallback and handle missing art, failed saves and unavailable image viewers without crashing the panel.
 
 ## 1.0.0 — 2026-10-11
@@ -13,4 +14,4 @@
 - Adapt OpenHacks 0.1.5's single UTF-16 main-window class constant from Default UI to Columns UI. No other binary bytes change; this is a local patch, not an official upstream build.
 - Supply `EoleBorder.cs` and its x64 executable. Set the Windows 11 border to `DWMWA_COLOR_NONE`, color the retained top strip from Eole, and notify Columns UI of current geometry through `WM_WINDOWPOSCHANGED` after OpenHacks applies its frame. This prevents empty bottom/right areas without moving the window.
 - Draw Biography's lookup chevron and lock as vectors, eliminating missing FontAwesome glyph boxes.
-- Add complete English/Russian installation documentation, a backup-aware installer, component hashes, build tools and upstream license/credit notices.
+- Add complete installation documentation, a backup-aware installer, component hashes, build tools and upstream license/credit notices.

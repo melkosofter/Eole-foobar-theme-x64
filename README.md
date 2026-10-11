@@ -2,7 +2,7 @@
 
 An unofficial **64-bit adaptation** of [Ottodix/Eole-foobar-theme](https://github.com/Ottodix/Eole-foobar-theme), preserving upstream history and credits. For **foobar2000 2.x x64**, using Columns UI and JSplitter. Tested with foobar2000 **2.26.1 x64 on Windows 11**.
 
-**[Download the complete x64 bundle](https://github.com/melkosofter/Eole-foobar-theme-x64/releases/latest)** · **[Полная инструкция на русском](README.ru.md)**
+**[Download the complete x64 bundle](https://github.com/melkosofter/Eole-foobar-theme-x64/releases/latest)** · **[Complete installation guide](docs/INSTALLATION.md)**
 
 The bundle contains the theme, x64 layout, all seven component folders, MilkDrop shaders/textures and **552 presets**, and the Windows 11 frame helper. The player itself is downloaded separately from [foobar2000.org](https://www.foobar2000.org/download). This is a theme distribution, not a copy of a user's profile.
 
@@ -43,7 +43,7 @@ The bundle contains the theme, x64 layout, all seven component folders, MilkDrop
 5. Preferences → Display → Columns UI → Import configuration: import `<profile>\themes\eole\columnsUI_eole_x64.fcl`.
 6. Add music folders in Preferences → Media Library. Play a track and open **Visualization** to use native MilkDrop. Its preset directory should be `%fb2k_profile_path%\milkdrop2\presets\`.
 
-Alternatively run `install.ps1 -ProfilePath '<your profile>'` in PowerShell for step 3. It validates hashes, copies only the supplied folders and saves backups before replacements. It does **not** import Columns UI settings or start the player. See [the full guide](README.ru.md) for commands, troubleshooting and rollback.
+Alternatively run `install.ps1 -ProfilePath '<your profile>'` in PowerShell for step 3. It validates hashes, copies only the supplied folders and saves backups before replacements. It does **not** import Columns UI settings or start the player. See [the full guide](docs/INSTALLATION.md) for commands, troubleshooting and rollback.
 
 ## Limits and maintenance
 

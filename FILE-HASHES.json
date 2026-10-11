@@ -9,11 +9,15 @@
   },
   {
     "path": "CHANGELOG.md",
-    "sha256": "bb0fcbf440d5e8502b0dd064ea2f2fd66c4e6e9b9bbcbdff3fcd41d8873e361e"
+    "sha256": "4a750725fc284962408f45e5c72983e3ccc6a87ad0d67487cd2065cb595461d2"
   },
   {
     "path": "components-manifest.json",
     "sha256": "51def722984aa4840e0ecf0b00d088080ad5b7bb2ce047a8071d5b3bf763c083"
+  },
+  {
+    "path": "docs/INSTALLATION.md",
+    "sha256": "bebd185be14ef3e2c6824867d00c025413a449be627d9bb1d5a956c3c5907178"
   },
   {
     "path": "docs/JSplitter-UPSTREAM.md",
@@ -29,7 +33,7 @@
   },
   {
     "path": "INSTALL - README.txt",
-    "sha256": "67b7f8a4dc67fb53994acf2c0e282a0e38372218eb9ad76e21c355a2503a0910"
+    "sha256": "8b04de074496e373088a6aaad542b8adcc30eec061b56018a7944f13c9a988d7"
   },
   {
     "path": "install.ps1",
@@ -2409,11 +2413,7 @@
   },
   {
     "path": "README.md",
-    "sha256": "7c294c83b3bbfe85c9a65dcc73ab5f3f9a3e3b42574d3ed51410a80837a847c9"
-  },
-  {
-    "path": "README.ru.md",
-    "sha256": "dc98cd0d1da7e972d03eb58f3753deed361d3475affad03e0413472c0d08e7a1"
+    "sha256": "1cbfca3fdd256173d17432242819789be2515da8dfcc28265836022453ba2592"
   },
   {
     "path": "themes/eole/columnsUI_eole.fcl",
@@ -5512,8 +5512,8 @@
     "sha256": "f047c6565099d037f57e0cc03fd2f4209973854609085e88ba389ece8822a214"
   },
   {
-    "path": "user-components-x64/foo_openhacks/README-ru.txt",
-    "sha256": "0f645f70e91049ef3699c64f67a1ff19c690aa16589ad131b9f11448c4ab599f"
+    "path": "user-components-x64/foo_openhacks/README.txt",
+    "sha256": "068d7f8b7b793b3dd09080bc904540905725fc5aa772302456120f212b4908a7"
   },
   {
     "path": "user-components-x64/foo_playcount/foo_playcount.dll",
