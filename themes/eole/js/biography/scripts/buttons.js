@@ -227,9 +227,8 @@ class Buttons {
 		}
 		if (n == 'all' || n == 'lookUp') {
 			this.lookUp.col = $.toRGB(ui.col.text);
-			$.gr(1, 1, false, g => {
-				this.lookUp.sz = Math.max(g.CalcTextWidth('\uF107', this.lookUp.font), g.CalcTextWidth('\uF023', this.lookUp.fontLock), g.CalcTextHeight('\uF107', this.lookUp.font), g.CalcTextHeight('\uF023', this.lookUp.fontLock));
-			});
+			// Vector lookup icons have stable dimensions without FontAwesome installed.
+			this.lookUp.sz = Math.max(12, Math.round(18 * this.lookUp.scale / 100));
 		}
 	}
 
@@ -878,13 +877,22 @@ class Btn {
 
 	drawLookUp(gr) {
 		const col = this.state !== 'down' ? ui.getBlend(this.item.hover, this.item.normal, this.transition_factor) : this.item.hover;
-		gr.SetTextRenderingHint(5);
+		const scale = but.lookUp.scale / 100;
+		const cx = this.x + this.p1 - but.lookUp.sz / 2;
+		const cy = this.y + this.p2 / 2;
+		const half = Math.max(3, 4 * scale);
+		const stroke = Math.max(1, 1.4 * scale);
+		gr.SetSmoothingMode(4);
 		if (!panel.lock) {
-			gr.DrawString(!panel.style.moreTags || !ppt.artistView ? '\uF107' : '\uF13A', but.lookUp.font, col, this.x, this.y, this.p1, this.p2, StringFormat(2, 0));
-			if (this.state == 'hover') gr.DrawString(!panel.style.moreTags || !ppt.artistView ? '\uF107' : '\uF13A', but.lookUp.font, col, this.x, this.y + 1, this.p1, this.p2, StringFormat(2, 0));
+			if (panel.style.moreTags && ppt.artistView)
+				gr.DrawEllipse(cx - half - 2 * scale, cy - half - 2 * scale, 2 * half + 4 * scale, 2 * half + 4 * scale, stroke, col);
+			gr.DrawLine(cx - half, cy - 2 * scale, cx, cy + 2 * scale, stroke, col);
+			gr.DrawLine(cx, cy + 2 * scale, cx + half, cy - 2 * scale, stroke, col);
 		} else {
-			gr.DrawString('\uF023', but.lookUp.fontLock, col, this.x, this.y + 2 * $.scale, this.p1, this.p2, StringFormat(2, 0));
+			gr.DrawRect(cx - half * 0.6, cy - half, half * 1.2, half * 1.1, stroke, col);
+			gr.FillSolidRect(cx - half, cy - scale, half * 2, half * 1.5, col);
 		}
+		gr.SetSmoothingMode(0);
 	}
 
 	drawScrollBtn(gr) {

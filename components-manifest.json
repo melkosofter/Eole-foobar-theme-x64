@@ -1,0 +1,65 @@
+[
+  {
+    "path": "user-components-x64/foo_openhacks/foo_openhacks.dll",
+    "version": "0.1.5 + Columns UI class patch",
+    "architecture": "AMD64",
+    "sha256": "edf140cde16defe46fe78c5465c0f530387336a4e0df953c666685a9ef983e3a",
+    "bytes": 192000
+  },
+  {
+    "path": "user-components-x64/foo_playcount/foo_playcount.dll",
+    "version": "3.1.10",
+    "architecture": "AMD64",
+    "sha256": "4674fc4013b45db3a004f71a61e449ed08222b46223269dfa71f847934d59f19",
+    "bytes": 268800
+  },
+  {
+    "path": "user-components-x64/foo_spider_monkey_panel/foo_spider_monkey_panel.dll",
+    "version": "1.7.26.5.1",
+    "architecture": "AMD64",
+    "sha256": "d2cdb592688f1c2319fbad134ef68ac96cd99f25efa1e24b0641d72a3086d97c",
+    "bytes": 4248064
+  },
+  {
+    "path": "user-components-x64/foo_spider_monkey_panel/mozjs-102.dll",
+    "version": "1.7.26.5.1",
+    "architecture": "AMD64",
+    "sha256": "2eb676a1540970e59c6863945c3268852a42cd34ce865cba8a17b2cda9232ba9",
+    "bytes": 27627008
+  },
+  {
+    "path": "user-components-x64/foo_ui_columns/foo_ui_columns.dll",
+    "version": "3.7.0",
+    "architecture": "AMD64",
+    "sha256": "f2f9c0fdd9c3ecc16155e1604b1fd2b8c2e5152bd18cef495e9bbe3b11d6d95d",
+    "bytes": 9252352
+  },
+  {
+    "path": "user-components-x64/foo_uie_eslyric/foo_uie_eslyric.dll",
+    "version": "1.0.7.0",
+    "architecture": "AMD64",
+    "sha256": "a7badeb22558746aa71220181802ab28149fa7a0358847005a163494392b0eba",
+    "bytes": 6092288
+  },
+  {
+    "path": "user-components-x64/foo_uie_jsplitter/foo_uie_jsplitter.dll",
+    "version": "4.3.4",
+    "architecture": "AMD64",
+    "sha256": "ed92c059ffc319e1fa57d25a14433376ac153e3bb4438d73d869cd5c35e5651b",
+    "bytes": 9355776
+  },
+  {
+    "path": "user-components-x64/foo_uie_jsplitter/mozjs-lur-153.dll",
+    "version": "4.3.4",
+    "architecture": "AMD64",
+    "sha256": "dd8b3caefcf21f7f2c9b05bf00eeba795f3b250811d906f94be4940a6177b60a",
+    "bytes": 33071104
+  },
+  {
+    "path": "user-components-x64/foo_vis_milk2/foo_vis_milk2.dll",
+    "version": "0.9.16",
+    "architecture": "AMD64",
+    "sha256": "6e90f4fdbf40529a55fbce195bf783b2a9ad101a94e892c2f9dd57b7a2e0c609",
+    "bytes": 2326528
+  }
+]

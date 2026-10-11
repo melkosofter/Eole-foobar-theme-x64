@@ -1,0 +1,10 @@
+void VS(float3 vPosIn     : POSITION,
+        float4 vDiffuseIn : COLOR,
+        float4 uv1        : TEXCOORD0, // .xy = warped UVs, .zw = original UVs
+        float2 uv2        : TEXCOORD1, // .x = rad, .y = ang
+    out float2 uv         : TEXCOORD0,
+    out float4 vPosProj   : POSITION)
+{
+    vPosProj = float4(vPosIn.xy, 1.0, 1.0);
+    uv = uv1.xy;
+}

@@ -1,3 +1,11 @@
+// Restore Eole header controls hidden in the original FCL preset.
+if (!window.GetProperty("Eole x64 header controls v1", false)) {
+    ["_DISPLAY: show light switch btn", "_DISPLAY: show fullscreen btn",
+     "_DISPLAY: show configure layout btn", "_DISPLAY: show right sidebar btn",
+     "_DISPLAY: show now playing btn"].forEach(function(key) { window.SetProperty(key, true); });
+    window.SetProperty("_DISPLAY: mini main menu button", false);
+    window.SetProperty("Eole x64 header controls v1", true);
+}
 var colors = {};
 
 var properties = {
@@ -231,6 +239,21 @@ function setDarkLayout(){
 	}
 }
 
+var eoleBorderTimer = null;
+function updateEoleBorderColor() {
+    // Apply after OpenHacks has finished removing the native caption.
+    if (eoleBorderTimer !== null) window.ClearTimeout(eoleBorderTimer);
+    eoleBorderTimer = window.SetTimeout(function () {
+        eoleBorderTimer = null;
+        try {
+            var rgb = (colors.normal_bg & 0xffffff).toString(16);
+            var helper = skin_global_path + "\\tools\\EoleBorder.exe";
+            if (utils.FileTest(helper, "e"))
+                new ActiveXObject("WScript.Shell").Run('"' + helper + '" ' + rgb, 0, false);
+        } catch (e) { console.log("Eole border color: " + e); }
+    }, 300);
+}
+
 function get_colors(){
 	setDarkLayout();
 	get_colors_global();
@@ -292,6 +315,7 @@ function get_colors(){
 		}
 	}
 	build_images();
+	updateEoleBorderColor();
 }
 
 //get_colors();
@@ -709,7 +733,7 @@ function adapt_buttons_to_layout(){
 			buttons.Settings.w = buttons.Settings.N_img.Width+3;
 			buttons.Settings.displayLabel(false);
 		} else {
-			buttons.Settings.w = 41+buttons.Settings.N_img.Width+btn.padding/2;
+			buttons.Settings.w = 41+buttons.Settings.N_img.Width+btn.padding[1]/2;
 			buttons.Settings.displayLabel(true);
 		}
 	} else {
@@ -752,7 +776,7 @@ function adapt_buttons_to_layout(){
 			buttons.Settings.w = buttons.Settings.N_img.Width+5+(compact_titlebar.isEqual(2)?19:0);
 			buttons.Settings.displayLabel(false);
 		} else {
-			buttons.Settings.w = 43+buttons.Settings.N_img.Width+btn.padding/2;
+			buttons.Settings.w = 43+buttons.Settings.N_img.Width+btn.padding[1]/2;
 			buttons.Settings.displayLabel(true);
 		}
 		if(compact_titlebar.isActive()) {
@@ -881,7 +905,7 @@ function SetPseudoCaption(){
 	if(layout_state.isEqual(0)) {
 		if(!compact_titlebar.isActive()){
 			var topleft_btns_w = topleft_btns.getWidth();
-			g_uihacks.SetPseudoCaption(topleft_btns_w, 8, ww-280, 28);
+			g_uihacks.SetPseudoCaption(topleft_btns_w, 5, Math.max(0, ww - window_btns.getWidth() - topleft_btns_w), 24);
 		} else {
 			if(g_searchbox.hide) {
 				var compact_btns_w = compact_btns.getWidth();

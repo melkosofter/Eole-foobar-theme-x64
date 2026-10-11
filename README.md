@@ -1,57 +1,60 @@
-# Eole Foobar theme
+# Eole foobar2000 theme — x64 edition
 
-This is a skin for the [foobar2000](https://www.foobar2000.org) audio player.
-This theme requires Foobar2000 32bit, version 1.4 or newer.
-Follow the [instructions below](https://github.com/Ottodix/Eole-foobar-theme#installation) to install it properly.
+An unofficial **64-bit adaptation** of [Ottodix/Eole-foobar-theme](https://github.com/Ottodix/Eole-foobar-theme), preserving upstream history and credits. For **foobar2000 2.x x64**, using Columns UI and JSplitter. Tested with foobar2000 **2.26.1 x64 on Windows 11**.
 
-> [!WARNING]
-> The components required for this theme do not work with foobar 64bit
+**[Download the complete x64 bundle](https://github.com/melkosofter/Eole-foobar-theme-x64/releases/latest)** · **[Полная инструкция на русском](README.ru.md)**
 
-## Contribute to the theme
+The bundle contains the theme, x64 layout, all seven component folders, MilkDrop shaders/textures and **552 presets**, and the Windows 11 frame helper. The player itself is downloaded separately from [foobar2000.org](https://www.foobar2000.org/download). This is a theme distribution, not a copy of a user's profile.
 
-If you've got some knowledge in Javascript, feel free to suggest code performance improvements, report bugs, or submit fixes.
-Just open an issue ticket, share the code, or create a pull request. 
+## What changed
 
-## Preview
+| Original implementation | x64 edition |
+|---|---|
+| Panel Stack Splitter | JSplitter with `Eole_x64_layout.js` |
+| UIHacks | OpenHacks x64 adapter; local Columns UI window-class patch |
+| Shpeck / Winamp visualization plugins | Native MilkDrop x64 panel embedded in Visualization |
+| Original ESLyric integration | ESLyric x64 and script-control marker |
+| Legacy title bar | Restored Foobar label, header buttons and mouse drag area |
+| Windows 11 window edges | Rounded corners, hidden outer border, theme-colored top strip; corrected child-panel sizing |
+| Biography lookup icon | Vector chevron and lock; no FontAwesome installation needed for these icons |
 
-![alt text](https://raw.githubusercontent.com/Ottodix/Eole-foobar-theme/master/preview.png)
+**Shpeck was replaced, not ported. Old Winamp plugins are not loaded.**
+
+## Components included
+
+| Component | Version | Upstream |
+|---|---|---|
+| Columns UI | 3.7.0 | [reupen/columns_ui](https://github.com/reupen/columns_ui) |
+| JSplitter | 4.3.4 | [dima-lur/jsplitter](https://github.com/dima-lur/jsplitter) |
+| Spider Monkey Panel x64 | 1.7.26.5.1 | [dima-lur/spider-monkey-panel-x64](https://github.com/dima-lur/spider-monkey-panel-x64) |
+| OpenHacks | 0.1.5, locally patched for Columns UI | [ttsping/foo_openhacks](https://github.com/ttsping/foo_openhacks) |
+| ESLyric | 1.0.7.0 | [ESLyric/release](https://github.com/ESLyric/release/releases) |
+| Playback Statistics | 3.1.10 | [Component page](https://www.foobar2000.org/components/view/foo_playcount) |
+| MilkDrop 2 Visualisation | 0.9.16 | [jecassis/foo_vis_milk2](https://github.com/jecassis/foo_vis_milk2) |
+
+`components-manifest.json` records exact binary hashes and architecture. Both JavaScript engine DLLs are included next to their components.
 
 ## Installation
 
-0. Close foobar.
+1. Install **foobar2000 x64**. Close every running foobar2000 instance and back up your profile.
+2. Extract the complete release ZIP. Your profile is normally `%APPDATA%\foobar2000-v2`; a portable installation normally uses `<foobar directory>\profile`. **Do not copy the theme into Program Files.**
+3. Copy `themes`, `user-components-x64`, `milkdrop2` and the supplied `wsh-data` into that profile, merging folders. For an existing Eole installation, retain other settings but replace any `THEMEVERSION_*` marker with the supplied `THEMEVERSION_1.2.3b24`.
+4. Start foobar2000, select **Columns UI** in Preferences → Display (restart if prompted).
+5. Preferences → Display → Columns UI → Import configuration: import `<profile>\themes\eole\columnsUI_eole_x64.fcl`.
+6. Add music folders in Preferences → Media Library. Play a track and open **Visualization** to use native MilkDrop. Its preset directory should be `%fb2k_profile_path%\milkdrop2\presets\`.
 
-1. Download this [github repository](https://github.com/Ottodix/Eole-foobar-theme/zipball/master/) and copy each folder into your foobar profile directory (`user-components`, `themes`, and `plugins`).
-   - STANDARD foobar2000 installation: your foobar profile directory is in here: `%AppData%\foobar2000` or `%AppData%\foobar2000-v2`
-   - PORTABLE foobar2000 installation: your foobar profile directory is in a folder named "`profile`" inside your installation directory.
+Alternatively run `install.ps1 -ProfilePath '<your profile>'` in PowerShell for step 3. It validates hashes, copies only the supplied folders and saves backups before replacements. It does **not** import Columns UI settings or start the player. See [the full guide](README.ru.md) for commands, troubleshooting and rollback.
 
-2. Run foobar, choose `Columns UI` as user interface (from the prompt, or in `File` > `Preferences` > `Display`).
-   - If `Columns UI` is not present Download and install [Columns UI](https://www.foobar2000.org/components/view/foo_ui_columns) component, restart foobar. Select `Columns UI` from the user interface prompt.
+## Limits and maintenance
 
-4. From the Columns UI settings in `File` > `Preferences` > `Display` > `Columns UI`, click on `Import`, and select the following file: `[FOOBAR_PROFILE_DIRECTORY]\themes\eole\columnsUI_eole.fcl`.
+- The new layout approximates the original Panel Stack Splitter layout. Mini mode works as a layout, but automatic shrinking/minimum-size constraints from UIHacks are not implemented.
+- The patched OpenHacks binary targets **Columns UI**, not Default UI. Replacing it with the upstream binary removes the custom caption drag integration.
+- Windows 11 frame integration needs .NET Framework 4.x. `EoleBorder.exe` runs briefly at startup/theme changes and exits; no resident service or global system setting is added. On older Windows, the DWM color attributes may be unavailable.
+- Lyrics, artist images and biographies depend on external services; availability varies. ESLyric sources can be configured through its preferences.
+- Do not reinstall old x86 components, UIHacks, Panel Stack Splitter or Shpeck alongside this bundle.
 
-5. Configure the Winamp directory in Shpeck for the visualisations, it's at the bottom of the preferences window: Click the `Foobar` button in the top left and navigate to `File` > `Preferences` > `Visualisations` > `Shpeck`. Click on the `...` button in the top right to browse and select the directory `[FOOBAR_PROFILE_DIRECTORY]\plugins\winamp`. Validate, close the preferences, and go to the `Visualization` tab of the skin. Right click and select `Milkdrop` in the `Autostart Plugin` submenu.
+## Build and attribution
 
-## Optional
-  
-If you want some extra polish you can change the systray icon: Click the `Foobar` button in the top left and navigate to `File` > `Preferences` > `Display` > `Columns UI`. Go to the `Notification area` tab and tick `Use custom icon`, then click `Select icon...` and select the file `[FOOBAR_PROFILE_DIRECTORY]\themes\eole\img\systray icons\white\uniEC4F.ico` (or any of the alternative icons in this folder).
+The frame helper source is included in `themes/eole/tools/EoleBorder.cs`; rebuild with `tools/build-border.ps1`. `tools/build-layout.py` reproduces the x64 FCL. `tools/patch-openhacks.py` reproduces the narrowly scoped binary patch with a SHA-256 guard. Changes are listed in [CHANGELOG.md](CHANGELOG.md).
 
-That's it! Enjoy your music!
-
-> [!WARNING]
-> The visualization tab is powered by Shpeck, which can be unstable. So if it doesn't work or it makes foobar crash on your computer, you'll have to figure what's wrong yourself. You can try to find the lastest informations at the end of the discussion topic of Shpeck here http://tinyurl.com/hr2ybp2, or completely remove the visualisations (you will need to edit the theme a little bit for that: right click the `Visualization` tab at the top and select `Settings`. Check `Hide visualization panel`. Remove the Shpeck component at the bottom of the panel list in `File` > `Preferences` > `Display` > `Columns UI` > `Layout`).
-
-
-## Useful to know
-
-- Eole uses a cover cache. The cover cache is built little by little: when a cover is displayed, if it isn't stored yet in the cache, it will be added to it. So on first display of any cover, it will be a little bit slow, but it will be a lot faster on subeequent displays. This cache is based on the `%album artist%` and `%album%` tags. After updating an existing cover, you must manually refresh it in foobar. Just right click on the cover needing to be refreshed and click `Refresh this image`.
-
-- The library browser panel has an option to load every cover from the image cache at startup, which is enabled by default and allows to browse your library without waiting for the covers to load. Foobar memory usage is higher when this option is enabled, because all the covers are loaded into memory. This option has an effect only once the image cache is already built, which is done little by little: when a cover is displayed, if it isn't stored yet in the cache, it will be added to the cache.
-
-- Most panels have a settings menu which can be accessed with a right click. You can also look for the hamburger (3 dots) menu icons. And if you want to get your hands dirty and edit a panel, press `SHIFT` when right clicking and click `Configure` to see which files contain the related scripts.
-
-## Credits
-- [TheQwertiest](https://github.com/TheQwertiest): Spider Monkey Panel, which powers most of this theme [foo_spider_monkey_panel](https://github.com/TheQwertiest/foo_spider_monkey_panel)
-- [marc2003](https://github.com/marc2k3): original [foo_jscript_panel](https://github.com/marc2k3/foo_jscript_panel)
-- [T.P. Wang](https://hydrogenaud.io/index.php?action=profile;u=44175): original [WSH Panel Mod](https://code.google.com/archive/p/foo-wsh-panel-mod).
-- [Br3tt aka Falstaff](https://www.deviantart.com/br3tt): original code for most of the panels
-- [WilB](https://github.com/Wil-B): original code of the [library tree panel](https://github.com/Wil-B/Library-Tree), and [biography panel](https://github.com/Wil-B/Biography)
+Original theme and panels: **Ottodix and Eole contributors**, **Br3tt/Falstaff**, **WilB** (Library Tree and Biography). Original JavaScript panel lineage: **TheQwertiest/Yuri Shutenko**, **marc2003**, **T.P. Wang**. x64 JS hosts: **dima-lur**. Window integration: **ttsping/OpenHacks**. Native visualization: **Jimmy Cassis and MilkDrop/Winamp contributors**. Component authors retain their copyrights and licenses; see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md), bundled license texts and [the upstream README](docs/UPSTREAM-README.md).

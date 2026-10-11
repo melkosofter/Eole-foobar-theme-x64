@@ -1,0 +1,2426 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>plman — JSplitter API</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <a class="brand" href="index.html">JSplitter API</a>
+        <div class="search-box">
+            <input id="doc-search" type="search" placeholder="Search API" autocomplete="off">
+            <div id="search-results" class="search-results" hidden></div>
+        </div>
+        <nav class="nav-groups">
+            <div class="nav-page-tree" data-nav-root="__globals__">
+        <a class="nav-link nav-page-link" href="globals.html">Globals</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div>
+            <div class="nav-group"><div class="nav-title">Namespaces</div><div class="nav-page-tree" data-nav-root="console">
+        <a class="nav-link nav-page-link" href="console.html">console</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="d2d">
+        <a class="nav-link nav-page-link" href="d2d.html">d2d</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="fb">
+        <a class="nav-link nav-page-link" href="fb.html">fb</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="gdi">
+        <a class="nav-link nav-page-link" href="gdi.html">gdi</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="performance">
+        <a class="nav-link nav-page-link" href="performance.html">performance</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="plman">
+        <a class="nav-link nav-page-link active" href="plman.html">plman</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="utils">
+        <a class="nav-link nav-page-link" href="utils.html">utils</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="window">
+        <a class="nav-link nav-page-link" href="window.html">window</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div></div><div class="nav-group"><div class="nav-title">Classes</div><div class="nav-page-tree" data-nav-root="ActiveXObject">
+        <a class="nav-link nav-page-link" href="ActiveXObject.html">ActiveXObject</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="BinaryReader">
+        <a class="nav-link nav-page-link" href="BinaryReader.html">BinaryReader</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="BinaryWriter">
+        <a class="nav-link nav-page-link" href="BinaryWriter.html">BinaryWriter</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="BroadcastChannel">
+        <a class="nav-link nav-page-link" href="BroadcastChannel.html">BroadcastChannel</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="ButtonObject">
+        <a class="nav-link nav-page-link" href="ButtonObject.html">ButtonObject</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="ContextMenuManager">
+        <a class="nav-link nav-page-link" href="ContextMenuManager.html">ContextMenuManager</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="D2DBitmap">
+        <a class="nav-link nav-page-link" href="D2DBitmap.html">D2DBitmap</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="D2DBrush">
+        <a class="nav-link nav-page-link" href="D2DBrush.html">D2DBrush</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="D2DCompileInfo">
+        <a class="nav-link nav-page-link" href="D2DCompileInfo.html">D2DCompileInfo</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="D2DEffect">
+        <a class="nav-link nav-page-link" href="D2DEffect.html">D2DEffect</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="D2DFont">
+        <a class="nav-link nav-page-link" href="D2DFont.html">D2DFont</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="D2DGraphics">
+        <a class="nav-link nav-page-link" href="D2DGraphics.html">D2DGraphics</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="D2DStrokeStyle">
+        <a class="nav-link nav-page-link" href="D2DStrokeStyle.html">D2DStrokeStyle</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="DriveInfo">
+        <a class="nav-link nav-page-link" href="DriveInfo.html">DriveInfo</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="DropTargetAction">
+        <a class="nav-link nav-page-link" href="DropTargetAction.html">DropTargetAction</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="Enumerator">
+        <a class="nav-link nav-page-link" href="Enumerator.html">Enumerator</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="ErrorEvent">
+        <a class="nav-link nav-page-link" href="ErrorEvent.html">ErrorEvent</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="Event">
+        <a class="nav-link nav-page-link" href="Event.html">Event</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="EventTarget">
+        <a class="nav-link nav-page-link" href="EventTarget.html">EventTarget</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbAudioChunk">
+        <a class="nav-link nav-page-link" href="FbAudioChunk.html">FbAudioChunk</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbFileInfo">
+        <a class="nav-link nav-page-link" href="FbFileInfo.html">FbFileInfo</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbMetadbHandle">
+        <a class="nav-link nav-page-link" href="FbMetadbHandle.html">FbMetadbHandle</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbMetadbHandleList">
+        <a class="nav-link nav-page-link" href="FbMetadbHandleList.html">FbMetadbHandleList</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbPlaybackQueueItem">
+        <a class="nav-link nav-page-link" href="FbPlaybackQueueItem.html">FbPlaybackQueueItem</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbPlayingItemLocation">
+        <a class="nav-link nav-page-link" href="FbPlayingItemLocation.html">FbPlayingItemLocation</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbPlaylistRecycler">
+        <a class="nav-link nav-page-link" href="FbPlaylistRecycler.html">FbPlaylistRecycler</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbProfiler">
+        <a class="nav-link nav-page-link" href="FbProfiler.html">FbProfiler</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbTitleFormat">
+        <a class="nav-link nav-page-link" href="FbTitleFormat.html">FbTitleFormat</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbTooltip">
+        <a class="nav-link nav-page-link" href="FbTooltip.html">FbTooltip</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbUiSelectionHolder">
+        <a class="nav-link nav-page-link" href="FbUiSelectionHolder.html">FbUiSelectionHolder</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbWindow">
+        <a class="nav-link nav-page-link" href="FbWindow.html">FbWindow</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="GdiBitmap">
+        <a class="nav-link nav-page-link" href="GdiBitmap.html">GdiBitmap</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="GdiBrush">
+        <a class="nav-link nav-page-link" href="GdiBrush.html">GdiBrush</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="GdiFont">
+        <a class="nav-link nav-page-link" href="GdiFont.html">GdiFont</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="GdiGraphics">
+        <a class="nav-link nav-page-link" href="GdiGraphics.html">GdiGraphics</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="GdiRawBitmap">
+        <a class="nav-link nav-page-link" href="GdiRawBitmap.html">GdiRawBitmap</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="HtmlDocument">
+        <a class="nav-link nav-page-link" href="HtmlDocument.html">HtmlDocument</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="HtmlNode">
+        <a class="nav-link nav-page-link" href="HtmlNode.html">HtmlNode</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="MainMenuManager">
+        <a class="nav-link nav-page-link" href="MainMenuManager.html">MainMenuManager</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="MenuObject">
+        <a class="nav-link nav-page-link" href="MenuObject.html">MenuObject</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="MessageEvent">
+        <a class="nav-link nav-page-link" href="MessageEvent.html">MessageEvent</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="PanelObject">
+        <a class="nav-link nav-page-link" href="PanelObject.html">PanelObject</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="PerformanceObserver">
+        <a class="nav-link nav-page-link" href="PerformanceObserver.html">PerformanceObserver</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="PerformanceObserverEntryList">
+        <a class="nav-link nav-page-link" href="PerformanceObserverEntryList.html">PerformanceObserverEntryList</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="PromiseRejectionEvent">
+        <a class="nav-link nav-page-link" href="PromiseRejectionEvent.html">PromiseRejectionEvent</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="RunResult">
+        <a class="nav-link nav-page-link" href="RunResult.html">RunResult</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="SQLiteDatabase">
+        <a class="nav-link nav-page-link" href="SQLiteDatabase.html">SQLiteDatabase</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="SQLiteStatement">
+        <a class="nav-link nav-page-link" href="SQLiteStatement.html">SQLiteStatement</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="TextReader">
+        <a class="nav-link nav-page-link" href="TextReader.html">TextReader</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="TextWriter">
+        <a class="nav-link nav-page-link" href="TextWriter.html">TextWriter</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="ThemeManager">
+        <a class="nav-link nav-page-link" href="ThemeManager.html">ThemeManager</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="Worker">
+        <a class="nav-link nav-page-link" href="Worker.html">Worker</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="WorkerGlobalScope">
+        <a class="nav-link nav-page-link" href="WorkerGlobalScope.html">WorkerGlobalScope</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div></div><div class="nav-group"><div class="nav-title">Modules</div><div class="nav-page-tree" data-nav-root="module:Callbacks">
+        <a class="nav-link nav-page-link" href="module-Callbacks.html">Callbacks</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="module:Codepages">
+        <a class="nav-link nav-page-link" href="module-Codepages.html">Codepages</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="module:Effects">
+        <a class="nav-link nav-page-link" href="module-Effects.html">Effects</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><a class="nav-link" href="module-ESModules.html">ESModules</a><div class="nav-page-tree" data-nav-root="module:Flags">
+        <a class="nav-link nav-page-link" href="module-Flags.html">Flags</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="module:Helpers">
+        <a class="nav-link nav-page-link" href="module-Helpers.html">Helpers</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="module:Matrix">
+        <a class="nav-link nav-page-link" href="module-Matrix.html">Matrix</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><a class="nav-link" href="module-TitleFormatting.html">TitleFormatting</a><a class="nav-link" href="module-WebAssembly.html">WebAssembly</a></div>
+            <div class="nav-group"><div class="nav-title">Tools</div><a class="nav-link " href="audit.html">Documentation audit</a></div>
+        </nav></aside>
+    <main class="content">
+        <div class="page-top"><a href="index.html">Documentation</a><span>/</span><b>plman</b></div>
+        
+    <article class="api-item" id="plman" data-kind="namespace" data-name="plman">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-namespace">namespace</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span></div>
+                <h2><a class="anchor" href="#plman">plman</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1634</div>
+        </header>
+        
+        
+        <div class="description"><p>Functions for managing foobar2000 playlists.</p></div>
+        
+        
+        
+        
+        
+        
+        
+        
+    </article>
+        
+    <article class="api-item" id="ActivePlaylist" data-kind="property" data-name="activeplaylist">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-property">property</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#ActivePlaylist">ActivePlaylist</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1642</div>
+        </header>
+        <pre class="signature"><code>ActivePlaylist: number</code></pre>
+        
+        <div class="description"><p>-1 if there is no active playlist.</p></div>
+        
+        
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If the assigned playlist index is out of bounds.</p></div>
+        </section>
+        
+        
+        <section class="member-section">
+            <h3>Examples</h3>
+            <pre class="example"><code>console.log(plman.ActivePlaylist);</code></pre><pre class="example"><code>plman.ActivePlaylist = <span class="tok-number">1</span>; <span class="tok-comment">// Switches to 2nd playlist.</span></code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="PlaybackOrder" data-kind="property" data-name="playbackorder">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-property">property</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#PlaybackOrder">PlaybackOrder</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1658</div>
+        </header>
+        <pre class="signature"><code>PlaybackOrder: number</code></pre>
+        
+        <div class="description"><p>See <a href="module-Flags.html#PlaybackOrder">PlaybackOrder</a> enum 0 - Default<br> 1 - Repeat (Playlist)<br> 2 - Repeat (Track)<br> 3 - Random<br> 4 - Shuffle (tracks)<br> 5 - Shuffle (albums)<br> 6 - Shuffle (folders)</p></div>
+        
+        
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If the assigned playback-order id is unknown.</p></div>
+        </section>
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="PlayingPlaylist" data-kind="property" data-name="playingplaylist">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-property">property</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#PlayingPlaylist">PlayingPlaylist</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1676</div>
+        </header>
+        <pre class="signature"><code>PlayingPlaylist: number</code></pre>
+        
+        <div class="description"><p>-1 if there is no playing playlist.</p></div>
+        
+        
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If the assigned playlist index is out of bounds.</p></div>
+        </section>
+        
+        
+        <section class="member-section">
+            <h3>Example</h3>
+            <pre class="example"><code>console.log(plman.PlayingPlaylist);</code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="PlaylistCount" data-kind="property" data-name="playlistcount">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-property">property</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span><span class="flag">readonly</span></div>
+                <h2><a class="anchor" href="#PlaylistCount">PlaylistCount</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1689</div>
+        </header>
+        <pre class="signature"><code>PlaylistCount: number</code></pre>
+        
+        <div class="description"></div>
+        
+        
+        
+        
+        
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="PlaylistRecycler" data-kind="property" data-name="playlistrecycler">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-property">property</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag">readonly</span></div>
+                <h2><a class="anchor" href="#PlaylistRecycler">PlaylistRecycler</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1697</div>
+        </header>
+        <pre class="signature"><code>PlaylistRecycler: <a class="type-link" href="FbPlaylistRecycler.html#FbPlaylistRecycler">FbPlaylistRecycler</a></code></pre>
+        
+        <div class="description"><p>A Recycle Bin for playlists.</p></div>
+        
+        
+        
+        
+        
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="AddItemToPlaybackQueue" data-kind="method" data-name="additemtoplaybackqueue">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#AddItemToPlaybackQueue">AddItemToPlaybackQueue</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2368</div>
+        </header>
+        <pre class="signature"><code>AddItemToPlaybackQueue(handle)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>handle</code></td><td><code><a class="type-link" href="FbMetadbHandle.html#FbMetadbHandle">FbMetadbHandle</a></code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>handle</b> is null.</p></div>
+        </section>
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="AddLocations" data-kind="method" data-name="addlocations">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#AddLocations">AddLocations</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1706</div>
+        </header>
+        <pre class="signature"><code>AddLocations(playlistIndex, paths, select)</code></pre>
+        
+        <div class="description"><p>This operation is asynchronous and may take some time to complete if it's a large array.</p>
+<p>Relative filesystem paths are resolved as described in <a href="utils.html#ReadTextFile">utils.ReadTextFile</a>. URLs and foobar2000 URI paths are passed through unchanged. Each filesystem location is resolved before the asynchronous operation starts.</p></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>paths</code></td><td><code>Array&lt;string&gt;</code></td><td><p>An array of files/URLs</p></td></tr><tr><td><code>select = false</code><span class="mini-flag">optional</span></td><td><code>boolean</code></td><td><p>If true, the active playlist will be set to the playlistIndex, the items will be selected and focus will be set to the first new item.</p></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>playlistIndex</b> is invalid or a playlist lock prevents adding items.</p></div>
+        </section>
+        
+        
+        <section class="member-section">
+            <h3>Example</h3>
+            <pre class="example"><code>plman.AddLocations(plman.ActivePlaylist, [<span class="tok-string">&quot;e:\\1.mp3&quot;</span>]);
+<span class="tok-comment">// This operation is asynchronous, so any code in your script directly</span>
+<span class="tok-comment">// after this line will run immediately without waiting for the job to finish.</span></code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="AddPlaylistItemToPlaybackQueue" data-kind="method" data-name="addplaylistitemtoplaybackqueue">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#AddPlaylistItemToPlaybackQueue">AddPlaylistItemToPlaybackQueue</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2376</div>
+        </header>
+        <pre class="signature"><code>AddPlaylistItemToPlaybackQueue(playlistIndex, playlistItemIndex)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>playlistItemIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="ClearPlaylist" data-kind="method" data-name="clearplaylist">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#ClearPlaylist">ClearPlaylist</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1727</div>
+        </header>
+        <pre class="signature"><code>ClearPlaylist(playlistIndex)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        
+        
+        <section class="member-section">
+            <h3>Example</h3>
+            <pre class="example"><code>plman.ClearPlaylist(plman.PlayingPlaylist);</code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="ClearPlaylistSelection" data-kind="method" data-name="clearplaylistselection">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#ClearPlaylistSelection">ClearPlaylistSelection</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1737</div>
+        </header>
+        <pre class="signature"><code>ClearPlaylistSelection(playlistIndex)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        
+        
+        <section class="member-section">
+            <h3>Example</h3>
+            <pre class="example"><code>plman.ClearPlaylistSelection(plman.ActivePlaylist);</code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="CreateAutoPlaylist" data-kind="method" data-name="createautoplaylist">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#CreateAutoPlaylist">CreateAutoPlaylist</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1747</div>
+        </header>
+        <pre class="signature"><code>CreateAutoPlaylist(playlistIndex, name, query, sort, flags)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>name</code></td><td><code>string</code></td><td><p>Name for the new autoplaylist.</p></td></tr><tr><td><code>query</code></td><td><code>string</code></td><td><p>Title formatting pattern for forming the playlist content.</p></td></tr><tr><td><code>sort = &#39;&#39;</code><span class="mini-flag">optional</span></td><td><code>string</code></td><td><p>Title formatting pattern for sorting.</p></td></tr><tr><td><code>flags = 0</code><span class="mini-flag">optional</span></td><td><code>number</code></td><td><p>1 - when set, will keep the autoplaylist sorted and prevent user from reordering it.</p></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>number</code> — <p>Index of the created playlist.</p></div>
+        </section>
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If foobar2000 rejects the autoplaylist query or sort expression.</p></div>
+        </section>
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="CreatePlaylist" data-kind="method" data-name="createplaylist">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#CreatePlaylist">CreatePlaylist</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1760</div>
+        </header>
+        <pre class="signature"><code>CreatePlaylist(playlistIndex, name)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>name</code></td><td><code>string</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>number</code> — <p>Index of the created playlist.</p></div>
+        </section>
+        
+        
+        
+        <section class="member-section">
+            <h3>Examples</h3>
+            <pre class="example"><code><span class="tok-comment">// Creates a new playlist named &quot;New playlist&quot;, which is put at the beginning of the current playlists.</span>
+plman.CreatePlaylist(<span class="tok-number">0</span>, <span class="tok-string">&#39;&#39;</span>);</code></pre><pre class="example"><code><span class="tok-comment">// Create a new playlist named &quot;my favourites&quot;, which is put at the end.</span>
+plman.CreatePlaylist(plman.PlaylistCount, <span class="tok-string">&#39;my favourites&#39;</span>);</code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="DuplicatePlaylist" data-kind="method" data-name="duplicateplaylist">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#DuplicatePlaylist">DuplicatePlaylist</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1777</div>
+        </header>
+        <pre class="signature"><code>DuplicatePlaylist(playlistIndex, name)</code></pre>
+        
+        <div class="description"><p>Note: the duplicated playlist gets inserted directly after the source playlistIndex.<br> It only duplicates playlist content, not the properties of the playlist (e.g. Autoplaylist).</p></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>name</code><span class="mini-flag">optional</span></td><td><code>?string</code></td><td><p>A name for the new playlist. If the name is "" or undefined, the name of the source playlist will be used.</p></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>number</code> — <p>Index of the created playlist.</p></div>
+        </section>
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>from</b> is out of bounds.</p></div>
+        </section>
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="EnsurePlaylistItemVisible" data-kind="method" data-name="ensureplaylistitemvisible">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#EnsurePlaylistItemVisible">EnsurePlaylistItemVisible</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1790</div>
+        </header>
+        <pre class="signature"><code>EnsurePlaylistItemVisible(playlistIndex, playlistItemIndex)</code></pre>
+        
+        <div class="description"><p>Signals playlist viewers to display the track (e.g. by scrolling to it's position).</p></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>playlistItemIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="ExecutePlaylistDefaultAction" data-kind="method" data-name="executeplaylistdefaultaction">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#ExecutePlaylistDefaultAction">ExecutePlaylistDefaultAction</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1800</div>
+        </header>
+        <pre class="signature"><code>ExecutePlaylistDefaultAction(playlistIndex, playlistItemIndex)</code></pre>
+        
+        <div class="description"><p>Starts playback by executing default doubleclick/enter action unless overridden by a lock to do something else.</p></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>playlistItemIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>boolean</code> — <p>-1 on failure.</p></div>
+        </section>
+        
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="FindByGUID" data-kind="method" data-name="findbyguid">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#FindByGUID">FindByGUID</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1844</div>
+        </header>
+        <pre class="signature"><code>FindByGUID(guid)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>guid</code></td><td><code>string</code></td><td><p>String representing GUID.</p></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>number</code> — <p>Index of the found playlist on success, -1 on failure.</p></div>
+        </section>
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If foobar2000 is older than 2.0.</p></div>
+        </section>
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="FindOrCreatePlaylist" data-kind="method" data-name="findorcreateplaylist">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#FindOrCreatePlaylist">FindOrCreatePlaylist</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1811</div>
+        </header>
+        <pre class="signature"><code>FindOrCreatePlaylist(name, unlocked)</code></pre>
+        
+        <div class="description"><p>Returns playlist index of the named playlist or creates a new one, if not found.<br> If a new playlist is created, the playlist index of that will be returned.</p></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>name</code></td><td><code>string</code></td><td></td></tr><tr><td><code>unlocked</code></td><td><code>boolean</code></td><td><p>If true, locked playlists are ignored when looking for existing playlists. If false, the playlistIndex of any playlist with the matching name will be returned.</p></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>number</code> — <p>Index of the found or created playlist.</p></div>
+        </section>
+        
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="FindPlaybackQueueItemIndex" data-kind="method" data-name="findplaybackqueueitemindex">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#FindPlaybackQueueItemIndex">FindPlaybackQueueItemIndex</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2384</div>
+        </header>
+        <pre class="signature"><code>FindPlaybackQueueItemIndex(handle, playlistIndex, playlistItemIndex)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>handle</code></td><td><code><a class="type-link" href="FbMetadbHandle.html#FbMetadbHandle">FbMetadbHandle</a></code></td><td></td></tr><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>playlistItemIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>number</code> — <p>Returns position in queue on success, -1 if track is not in queue.</p></div>
+        </section>
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>handle</b> is null.</p></div>
+        </section>
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="FindPlaylist" data-kind="method" data-name="findplaylist">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#FindPlaylist">FindPlaylist</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1824</div>
+        </header>
+        <pre class="signature"><code>FindPlaylist(name)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>name</code></td><td><code>string</code></td><td><p>Case insensitive.</p></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>number</code> — <p>Index of the found playlist on success, -1 on failure.</p></div>
+        </section>
+        
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="FlushPlaybackQueue" data-kind="method" data-name="flushplaybackqueue">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#FlushPlaybackQueue">FlushPlaybackQueue</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2395</div>
+        </header>
+        <pre class="signature"><code>FlushPlaybackQueue()</code></pre>
+        
+        <div class="description"></div>
+        
+        
+        
+        
+        
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="GetGUID" data-kind="method" data-name="getguid">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#GetGUID">GetGUID</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1832</div>
+        </header>
+        <pre class="signature"><code>GetGUID(playlistIndex)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>string</code></div>
+        </section>
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If foobar2000 is older than 2.0.</p></div>
+        </section>
+        
+        
+        <section class="member-section">
+            <h3>Example</h3>
+            <pre class="example"><code>console.log(plman.GetGUID(plman.ActivePlaylist));</code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="GetPlaybackQueueContents" data-kind="method" data-name="getplaybackqueuecontents">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#GetPlaybackQueueContents">GetPlaybackQueueContents</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2402</div>
+        </header>
+        <pre class="signature"><code>GetPlaybackQueueContents()</code></pre>
+        
+        <div class="description"></div>
+        
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>Array&lt;<a class="type-link" href="FbPlaybackQueueItem.html#FbPlaybackQueueItem">FbPlaybackQueueItem</a>&gt;</code></div>
+        </section>
+        
+        
+        
+        <section class="member-section">
+            <h3>Example</h3>
+            <pre class="example"><code><span class="tok-keyword">let</span> contents = plman.GetPlaybackQueueContents();
+<span class="tok-keyword">if</span> (contents.length) {
+    <span class="tok-comment">// access properties of first item</span>
+    console.log(contents[<span class="tok-number">0</span>].PlaylistIndex, contents[<span class="tok-number">0</span>].PlaylistItemIndex);
+}</code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="GetPlaybackQueueHandles" data-kind="method" data-name="getplaybackqueuehandles">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#GetPlaybackQueueHandles">GetPlaybackQueueHandles</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2416</div>
+        </header>
+        <pre class="signature"><code>GetPlaybackQueueHandles()</code></pre>
+        
+        <div class="description"></div>
+        
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code><a class="type-link" href="FbMetadbHandleList.html#FbMetadbHandleList">FbMetadbHandleList</a></code></div>
+        </section>
+        
+        
+        
+        <section class="member-section">
+            <h3>Example</h3>
+            <pre class="example"><code><span class="tok-keyword">let</span> handles = plman.GetPlaybackQueueHandles();
+<span class="tok-keyword">if</span> (handles.Count &gt; <span class="tok-number">0</span>) {
+   <span class="tok-comment">// use &quot;Count&quot; to determine if Playback Queue is active.</span>
+}</code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="GetPlayingItemLocation" data-kind="method" data-name="getplayingitemlocation">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#GetPlayingItemLocation">GetPlayingItemLocation</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1853</div>
+        </header>
+        <pre class="signature"><code>GetPlayingItemLocation()</code></pre>
+        
+        <div class="description"><p>Retrieves playlist position of currently playing item.<br> On failure, the property <a href="FbPlayingItemLocation.html#IsValid">FbPlayingItemLocation.IsValid</a> will be set to false.</p></div>
+        
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code><a class="type-link" href="FbPlayingItemLocation.html#FbPlayingItemLocation">FbPlayingItemLocation</a></code></div>
+        </section>
+        
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="GetPlaylistFocusItemIndex" data-kind="method" data-name="getplaylistfocusitemindex">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#GetPlaylistFocusItemIndex">GetPlaylistFocusItemIndex</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1863</div>
+        </header>
+        <pre class="signature"><code>GetPlaylistFocusItemIndex(playlistIndex)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>number</code> — <p>Returns -1 if nothing is selected</p></div>
+        </section>
+        
+        
+        
+        <section class="member-section">
+            <h3>Example</h3>
+            <pre class="example"><code><span class="tok-keyword">let</span> focus_item_index = plman.GetPlaylistFocusItemIndex(plman.ActivePlaylist); <span class="tok-comment">// 0 would be the first item</span></code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="GetPlaylistItems" data-kind="method" data-name="getplaylistitems">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#GetPlaylistItems">GetPlaylistItems</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1874</div>
+        </header>
+        <pre class="signature"><code>GetPlaylistItems(playlistIndex)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code><a class="type-link" href="FbMetadbHandleList.html#FbMetadbHandleList">FbMetadbHandleList</a></code></div>
+        </section>
+        
+        
+        
+        <section class="member-section">
+            <h3>Example</h3>
+            <pre class="example"><code><span class="tok-keyword">let</span> handle_list = plman.GetPlaylistItems(plman.PlayingPlaylist);</code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="GetPlaylistLockedActions" data-kind="method" data-name="getplaylistlockedactions">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#GetPlaylistLockedActions">GetPlaylistLockedActions</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1885</div>
+        </header>
+        <pre class="signature"><code>GetPlaylistLockedActions(playlistIndex)</code></pre>
+        
+        <div class="description"><p>Returns the list of blocked actions</p></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>Array&lt;string&gt;</code> — <p>May contain the following:<br> - 'AddItems'<br> - 'RemoveItems'<br> - 'ReorderItems'<br> - 'ReplaceItems'<br> - 'RenamePlaylist'<br> - 'RemovePlaylist'<br> - 'ExecuteDefaultAction'</p></div>
+        </section>
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>playlistIndex</b> is out of bounds.</p></div>
+        </section>
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="GetPlaylistLockName" data-kind="method" data-name="getplaylistlockname">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#GetPlaylistLockName">GetPlaylistLockName</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1903</div>
+        </header>
+        <pre class="signature"><code>GetPlaylistLockName(playlistIndex)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>?string</code> — <p>name of lock owner if there is a lock, null otherwise</p></div>
+        </section>
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>playlistIndex</b> is out of bounds or the playlist lock name cannot be queried.</p></div>
+        </section>
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="GetPlaylistName" data-kind="method" data-name="getplaylistname">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#GetPlaylistName">GetPlaylistName</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1912</div>
+        </header>
+        <pre class="signature"><code>GetPlaylistName(playlistIndex)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>string</code></div>
+        </section>
+        
+        
+        
+        <section class="member-section">
+            <h3>Example</h3>
+            <pre class="example"><code>console.log(plman.GetPlaylistName(plman.ActivePlaylist));</code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="GetPlaylistSelectedIndexes" data-kind="method" data-name="getplaylistselectedindexes">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#GetPlaylistSelectedIndexes">GetPlaylistSelectedIndexes</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1923</div>
+        </header>
+        <pre class="signature"><code>GetPlaylistSelectedIndexes(playlistIndex)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>Array&lt;number&gt;</code></div>
+        </section>
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>playlistIndex</b> is invalid.</p></div>
+        </section>
+        
+        
+        <section class="member-section">
+            <h3>Example</h3>
+            <pre class="example"><code><span class="tok-keyword">let</span> selected_indexes = plman.GetPlaylistSelectedIndexes(plman.ActivePlaylist);</code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="GetPlaylistSelectedItems" data-kind="method" data-name="getplaylistselecteditems">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#GetPlaylistSelectedItems">GetPlaylistSelectedItems</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1935</div>
+        </header>
+        <pre class="signature"><code>GetPlaylistSelectedItems(playlistIndex)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code><a class="type-link" href="FbMetadbHandleList.html#FbMetadbHandleList">FbMetadbHandleList</a></code></div>
+        </section>
+        
+        
+        
+        <section class="member-section">
+            <h3>Example</h3>
+            <pre class="example"><code><span class="tok-keyword">let</span> selected_items = plman.GetPlaylistSelectedItems(plman.ActivePlaylist);</code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="InsertPlaylistItems" data-kind="method" data-name="insertplaylistitems">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#InsertPlaylistItems">InsertPlaylistItems</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1946</div>
+        </header>
+        <pre class="signature"><code>InsertPlaylistItems(playlistIndex, base, handle_list, select)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>base</code></td><td><code>number</code></td><td><p>Position in playlist</p></td></tr><tr><td><code>handle_list</code></td><td><code><a class="type-link" href="FbMetadbHandleList.html#FbMetadbHandleList">FbMetadbHandleList</a></code></td><td><p>Items to insert</p></td></tr><tr><td><code>select = false</code><span class="mini-flag">optional</span></td><td><code>boolean</code></td><td><p>If true then inserted items will be selected</p></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>handles</b> is null.</p></div>
+        </section>
+        
+        
+        <section class="member-section">
+            <h3>Examples</h3>
+            <div class="example-caption">Add all library tracks to the beginning of playlist.</div><pre class="example"><code><span class="tok-keyword">let</span> ap = plman.ActivePlaylist;
+plman.InsertPlaylistItems(ap, <span class="tok-number">0</span>, fb.GetLibraryItems());</code></pre><div class="example-caption">Add all library tracks to end of playlist.</div><pre class="example"><code><span class="tok-keyword">let</span> ap = plman.ActivePlaylist;
+plman.InsertPlaylistItems(ap, plman.PlaylistItemCount(ap), fb.GetLibraryItems());</code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="InsertPlaylistItemsFilter" data-kind="method" data-name="insertplaylistitemsfilter">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#InsertPlaylistItemsFilter">InsertPlaylistItemsFilter</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1965</div>
+        </header>
+        <pre class="signature"><code>InsertPlaylistItemsFilter(playlistIndex, base, handle_list, select)</code></pre>
+        
+        <div class="description"><p>Same as <a href="plman.html#InsertPlaylistItems">plman.InsertPlaylistItems</a> except any duplicates contained in handle_list are removed.</p></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>base</code></td><td><code>number</code></td><td><p>Position in playlist</p></td></tr><tr><td><code>handle_list</code></td><td><code><a class="type-link" href="FbMetadbHandleList.html#FbMetadbHandleList">FbMetadbHandleList</a></code></td><td><p>Items to insert</p></td></tr><tr><td><code>select = false</code><span class="mini-flag">optional</span></td><td><code>boolean</code></td><td><p>If true then inserted items will be selected</p></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>handles</b> is null.</p></div>
+        </section>
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="InvertSelection" data-kind="method" data-name="invertselection">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#InvertSelection">InvertSelection</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1978</div>
+        </header>
+        <pre class="signature"><code>InvertSelection(playlistIndex)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>playlistIndex</b> is invalid.</p></div>
+        </section>
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="IsAutoPlaylist" data-kind="method" data-name="isautoplaylist">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#IsAutoPlaylist">IsAutoPlaylist</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1986</div>
+        </header>
+        <pre class="signature"><code>IsAutoPlaylist(playlistIndex)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>boolean</code></div>
+        </section>
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>playlistIndex</b> is out of bounds.</p></div>
+        </section>
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="IsPlaylistItemSelected" data-kind="method" data-name="isplaylistitemselected">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#IsPlaylistItemSelected">IsPlaylistItemSelected</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:1995</div>
+        </header>
+        <pre class="signature"><code>IsPlaylistItemSelected(playlistIndex, playlistItemIndex)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>playlistItemIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>boolean</code></div>
+        </section>
+        
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="IsPlaylistLocked" data-kind="method" data-name="isplaylistlocked">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span><span class="flag deprecated">deprecated</span></div>
+                <h2><a class="anchor" href="#IsPlaylistLocked">IsPlaylistLocked</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2004</div>
+        </header>
+        <pre class="signature"><code>IsPlaylistLocked(playlistIndex)</code></pre>
+        <div class="notice notice-deprecated"><b>Deprecated.</b></div>
+        <div class="description"><p>Note: returns true, if the playlist is an autoplaylist. To determine if a playlist is not an autoplaylist, but locked with something like <b>foo_utils</b> or <b>foo_playlist_attributes</b>, use with conjunction of <a href="plman.html#IsAutoPlaylist">plman.IsAutoPlaylist</a>. <br> Deprecated: use <a href="plman.html#GetPlaylistLockedActions">plman.GetPlaylistLockedActions</a>.</p></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>boolean</code></div>
+        </section>
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>playlistIndex</b> is out of bounds.</p></div>
+        </section>
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="IsRedoAvailable" data-kind="method" data-name="isredoavailable">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#IsRedoAvailable">IsRedoAvailable</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2020</div>
+        </header>
+        <pre class="signature"><code>IsRedoAvailable(playlistIndex)</code></pre>
+        
+        <div class="description"><p>Returns whether a redo restore point is available for specified playlist. <br> Related methods: <a href="plman.html#IsUndoAvailable">plman.IsUndoAvailable</a>, <a href="plman.html#Redo">plman.Redo</a>, <a href="plman.html#Undo">plman.Undo</a>, <a href="plman.html#UndoBackup">plman.UndoBackup</a></p></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>boolean</code></div>
+        </section>
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>playlistIndex</b> is out of bounds.</p></div>
+        </section>
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="IsUndoAvailable" data-kind="method" data-name="isundoavailable">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#IsUndoAvailable">IsUndoAvailable</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2033</div>
+        </header>
+        <pre class="signature"><code>IsUndoAvailable(playlistIndex)</code></pre>
+        
+        <div class="description"><p>Returns whether an undo restore point is available for specified playlist. <br> Related methods: <a href="plman.html#IsRedoAvailable">plman.IsRedoAvailable</a>, <a href="plman.html#Redo">plman.Redo</a>, <a href="plman.html#Undo">plman.Undo</a>, <a href="plman.html#UndoBackup">plman.UndoBackup</a></p></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>boolean</code></div>
+        </section>
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>playlistIndex</b> is out of bounds.</p></div>
+        </section>
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="MovePlaylist" data-kind="method" data-name="moveplaylist">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#MovePlaylist">MovePlaylist</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2046</div>
+        </header>
+        <pre class="signature"><code>MovePlaylist(from, to)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>from</code></td><td><code>number</code></td><td></td></tr><tr><td><code>to</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>boolean</code></div>
+        </section>
+        
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="MovePlaylistSelection" data-kind="method" data-name="moveplaylistselection">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#MovePlaylistSelection">MovePlaylistSelection</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2055</div>
+        </header>
+        <pre class="signature"><code>MovePlaylistSelection(playlistIndex, delta)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>delta</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>boolean</code></div>
+        </section>
+        
+        
+        
+        <section class="member-section">
+            <h3>Example</h3>
+            <pre class="example"><code><span class="tok-comment">// Moves selected items to end of playlist.</span>
+plman.MovePlaylistSelection(plman.ActivePlaylist, plman.PlaylistItemCount(plman.ActivePlaylist));</code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="MovePlaylistSelectionV2" data-kind="method" data-name="moveplaylistselectionv2">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#MovePlaylistSelectionV2">MovePlaylistSelectionV2</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2068</div>
+        </header>
+        <pre class="signature"><code>MovePlaylistSelectionV2(playlistIndex, new_pos)</code></pre>
+        
+        <div class="description"><p>Unlike <a href="plman.html#MovePlaylistSelection">plman.MovePlaylistSelection</a>, this has full support for non-contiguous selections and all you have to do is supply the new position index.</p></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>new_pos</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>playlistIndex</b> is invalid.</p></div>
+        </section>
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="PlaylistItemCount" data-kind="method" data-name="playlistitemcount">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#PlaylistItemCount">PlaylistItemCount</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2079</div>
+        </header>
+        <pre class="signature"><code>PlaylistItemCount(playlistIndex)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>number</code></div>
+        </section>
+        
+        
+        
+        <section class="member-section">
+            <h3>Example</h3>
+            <pre class="example"><code>console.log(plman.PlaylistItemCount(plman.PlayingPlaylist)); <span class="tok-comment">// 12</span></code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="Redo" data-kind="method" data-name="redo">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#Redo">Redo</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2090</div>
+        </header>
+        <pre class="signature"><code>Redo(playlistIndex)</code></pre>
+        
+        <div class="description"><p>Reverts specified playlist to the next redo restore point and generates an undo restore point.<br> Note: revert operation may be not applied if the corresponding action is locked. Use <a href="plman.html#GetPlaylistLockedActions">plman.GetPlaylistLockedActions</a> to check if there are any locks present.<br> <br> Related methods: <a href="plman.html#IsRedoAvailable">plman.IsRedoAvailable</a>, <a href="plman.html#IsUndoAvailable">plman.IsUndoAvailable</a>, <a href="plman.html#Undo">plman.Undo</a>, <a href="plman.html#UndoBackup">plman.UndoBackup</a></p></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>playlistIndex</b> is out of bounds or redo is not available.</p></div>
+        </section>
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="RemoveItemFromPlaybackQueue" data-kind="method" data-name="removeitemfromplaybackqueue">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#RemoveItemFromPlaybackQueue">RemoveItemFromPlaybackQueue</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2429</div>
+        </header>
+        <pre class="signature"><code>RemoveItemFromPlaybackQueue(index)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>index</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="RemoveItemsFromPlaybackQueue" data-kind="method" data-name="removeitemsfromplaybackqueue">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#RemoveItemsFromPlaybackQueue">RemoveItemsFromPlaybackQueue</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2436</div>
+        </header>
+        <pre class="signature"><code>RemoveItemsFromPlaybackQueue(affectedItems)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>affectedItems</code></td><td><code>Array&lt;number&gt;</code></td><td><p>Array like [1, 3, 5]</p></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="RemovePlaylist" data-kind="method" data-name="removeplaylist">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#RemovePlaylist">RemovePlaylist</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2104</div>
+        </header>
+        <pre class="signature"><code>RemovePlaylist(playlistIndex)</code></pre>
+        
+        <div class="description"><p>Removes the specified playlist.<br> Note: if removing the active playlist, no playlist will be active after using this. You'll need to set it manually or use <a href="plman.html#RemovePlaylistSwitch">plman.RemovePlaylistSwitch</a> instead.</p></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>boolean</code></div>
+        </section>
+        
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="RemovePlaylistSelection" data-kind="method" data-name="removeplaylistselection">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#RemovePlaylistSelection">RemovePlaylistSelection</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2116</div>
+        </header>
+        <pre class="signature"><code>RemovePlaylistSelection(playlistIndex, crop)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>crop = false</code><span class="mini-flag">optional</span></td><td><code>boolean</code></td><td><p>If true, then removes items that are NOT selected.</p></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        
+        
+        <section class="member-section">
+            <h3>Examples</h3>
+            <pre class="example"><code>&lt;Remove selected items from playlist&gt;
+plman.RemovePlaylistSelection(plman.ActivePlaylist);</code></pre><pre class="example"><code>&lt;Remove items that are NOT selected&gt;
+plman.RemovePlaylistSelection(plman.ActivePlaylist, <span class="tok-literal">true</span>);</code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="RemovePlaylistSwitch" data-kind="method" data-name="removeplaylistswitch">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#RemovePlaylistSwitch">RemovePlaylistSwitch</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2130</div>
+        </header>
+        <pre class="signature"><code>RemovePlaylistSwitch(playlistIndex)</code></pre>
+        
+        <div class="description"><p>Removes the specified playlist.<br> This automatically sets another playlist as active if removing the active playlist.</p></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>boolean</code></div>
+        </section>
+        
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="RenamePlaylist" data-kind="method" data-name="renameplaylist">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#RenamePlaylist">RenamePlaylist</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2141</div>
+        </header>
+        <pre class="signature"><code>RenamePlaylist(playlistIndex, name)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>name</code></td><td><code>string</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>boolean</code></div>
+        </section>
+        
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="ReorderPlaylistItems" data-kind="method" data-name="reorderplaylistitems">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#ReorderPlaylistItems">ReorderPlaylistItems</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2150</div>
+        </header>
+        <pre class="signature"><code>ReorderPlaylistItems(playlistIndex, order)</code></pre>
+        
+        <div class="description"><p>Reorders all items in the specified playlist according to the supplied permutation.<br> The <b>order</b> array must contain exactly one entry for each playlist item. Each value specifies the old item index that should appear at the corresponding new position.<br> The array must:<br> - have the same length as the playlist item count<br> - contain only valid item indices<br> - contain each item index exactly once<br></p></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td><p>zero-based playlist index</p></td></tr><tr><td><code>order</code></td><td><code>Array&lt;number&gt;</code></td><td><p>permutation describing the new playlist item order</p></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>boolean</code> — <p><b>true</b> if the playlist was reordered successfully</p></div>
+        </section>
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>playlistIndex</b> is invalid or <b>order</b> is not a valid permutation of the playlist items.</p></div>
+        </section>
+        
+        
+        <section class="member-section">
+            <h3>Example</h3>
+            <pre class="example"><code><span class="tok-comment">// Changes the order from [A, B, C] to [C, A, B]</span>
+<span class="tok-keyword">const</span> success = ReorderPlaylistItems(<span class="tok-number">0</span>, [<span class="tok-number">2</span>, <span class="tok-number">0</span>, <span class="tok-number">1</span>])</code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="ReplacePlaylistItem" data-kind="method" data-name="replaceplaylistitem">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#ReplacePlaylistItem">ReplacePlaylistItem</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2170</div>
+        </header>
+        <pre class="signature"><code>ReplacePlaylistItem(playlistIndex, playlistItemIndex, handle_or_handles)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>playlistItemIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>handle_or_handles</code></td><td><code><a class="type-link" href="FbMetadbHandle.html#FbMetadbHandle">FbMetadbHandle</a>|<a class="type-link" href="FbMetadbHandleList.html#FbMetadbHandleList">FbMetadbHandleList</a></code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>handle</b>, <b>playlistIndex</b>, or <b>playlistItemIndex</b> is invalid.</p></div>
+        </section>
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="SelectQueryItems" data-kind="method" data-name="selectqueryitems">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#SelectQueryItems">SelectQueryItems</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2180</div>
+        </header>
+        <pre class="signature"><code>SelectQueryItems(playlistIndex, query)</code></pre>
+        
+        <div class="description"><p>This selects playlist items in a similar manner to the foobar2000 native playlist search.</p></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>query</code></td><td><code>string</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>Array&lt;number&gt;</code> — <p>Array of selected indexes</p></div>
+        </section>
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>playlistIndex</b> is invalid or the query cannot be parsed.</p></div>
+        </section>
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="SetActivePlaylistContext" data-kind="method" data-name="setactiveplaylistcontext">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#SetActivePlaylistContext">SetActivePlaylistContext</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2192</div>
+        </header>
+        <pre class="signature"><code>SetActivePlaylistContext()</code></pre>
+        
+        <div class="description"><p>Workaround so you can use the Edit menu or run <a href="fb.html#RunMainMenuCommand">fb.RunMainMenuCommand</a>("Edit/Something...") when your panel has focus and a dedicated playlist viewer doesn't.</p></div>
+        
+        
+        
+        
+        
+        
+        
+        <section class="member-section">
+            <h3>Example</h3>
+            <pre class="example"><code>plman.SetActivePlaylistContext(); <span class="tok-comment">// once on startup</span>
+
+<span class="tok-keyword">function</span> on_focus(is_focused) {
+   <span class="tok-keyword">if</span> (is_focused) {
+       plman.SetActivePlaylistContext(); <span class="tok-comment">// When the panel gets focus but not on every click</span>
+   }
+}</code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="SetPlaylistFocusItem" data-kind="method" data-name="setplaylistfocusitem">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#SetPlaylistFocusItem">SetPlaylistFocusItem</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2209</div>
+        </header>
+        <pre class="signature"><code>SetPlaylistFocusItem(playlistIndex, playlistItemIndex)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>playlistItemIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        
+        
+        <section class="member-section">
+            <h3>Example</h3>
+            <pre class="example"><code>plman.SetPlaylistFocusItem(plman.ActivePlaylist, <span class="tok-number">0</span>);</code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="SetPlaylistFocusItemByHandle" data-kind="method" data-name="setplaylistfocusitembyhandle">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#SetPlaylistFocusItemByHandle">SetPlaylistFocusItemByHandle</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2220</div>
+        </header>
+        <pre class="signature"><code>SetPlaylistFocusItemByHandle(playlistIndex, handle)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>handle</code></td><td><code><a class="type-link" href="FbMetadbHandle.html#FbMetadbHandle">FbMetadbHandle</a></code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>handle</b> is null.</p></div>
+        </section>
+        
+        
+        <section class="member-section">
+            <h3>Example</h3>
+            <pre class="example"><code><span class="tok-keyword">let</span> ap = plman.ActivePlaylist;
+<span class="tok-keyword">let</span> handle = plman.GetPlaylistItems(ap)[<span class="tok-number">1</span>]; <span class="tok-comment">// 2nd item in playlist</span>
+plman.SetPlaylistFocusItemByHandle(ap, handle);</code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="SetPlaylistLockedActions" data-kind="method" data-name="setplaylistlockedactions">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#SetPlaylistLockedActions">SetPlaylistLockedActions</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2234</div>
+        </header>
+        <pre class="signature"><code>SetPlaylistLockedActions(playlistIndex, lockedActions)</code></pre>
+        
+        <div class="description"><p>Blocks requested actions.<br> Note: the lock can be changed only if there is no lock or if it's owned by <b>foo_uie_jsplitter</b>. The owner of the lock can be checked via <a href="plman.html#GetPlaylistLockName">plman.GetPlaylistLockName</a>.</p></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>lockedActions</code></td><td><code>Array&lt;string&gt;</code></td><td><p>May contain the following:<br> - 'AddItems'<br> - 'RemoveItems'<br> - 'ReorderItems'<br> - 'ReplaceItems'<br> - 'RenamePlaylist'<br> - 'RemovePlaylist'<br> - 'ExecuteDefaultAction'</p></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>lockedActions</b> is invalid, <b>playlistIndex</b> is out of bounds, the lock belongs to another component, or an action name is unknown.</p></div>
+        </section>
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="SetPlaylistSelection" data-kind="method" data-name="setplaylistselection">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#SetPlaylistSelection">SetPlaylistSelection</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2254</div>
+        </header>
+        <pre class="signature"><code>SetPlaylistSelection(playlistIndex, affectedItems, state)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>affectedItems</code></td><td><code>Array&lt;number&gt;</code></td><td><p>An array of item indexes.</p></td></tr><tr><td><code>state</code></td><td><code>boolean</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        
+        
+        <section class="member-section">
+            <h3>Example</h3>
+            <pre class="example"><code><span class="tok-comment">// Selects first, third and fifth tracks in playlist. This does not affect other selected items.</span>
+plman.SetPlaylistSelection(plman.ActivePlaylist, [<span class="tok-number">0</span>, <span class="tok-number">2</span>, <span class="tok-number">4</span>], <span class="tok-literal">true</span>);</code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="SetPlaylistSelectionSingle" data-kind="method" data-name="setplaylistselectionsingle">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#SetPlaylistSelectionSingle">SetPlaylistSelectionSingle</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2267</div>
+        </header>
+        <pre class="signature"><code>SetPlaylistSelectionSingle(playlistIndex, playlistItemIndex, state)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>playlistItemIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>state</code></td><td><code>boolean</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        
+        
+        <section class="member-section">
+            <h3>Examples</h3>
+            <pre class="example"><code><span class="tok-comment">// Deselects first playlist item. Only works when it is already selected!</span>
+plman.SetPlaylistSelectionSingle(plman.ActivePlaylist, <span class="tok-number">0</span>, <span class="tok-literal">false</span>);</code></pre><pre class="example"><code><span class="tok-keyword">let</span> ap = plman.ActivePlaylist;
+<span class="tok-comment">// Selects last item in playlist. This does not affect other selected items.</span>
+plman.SetPlaylistSelectionSingle(ap, plman.PlaylistItemCount(ap) - <span class="tok-number">1</span>, <span class="tok-literal">true</span>);</code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="ShowAutoPlaylistUI" data-kind="method" data-name="showautoplaylistui">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span></div>
+                <h2><a class="anchor" href="#ShowAutoPlaylistUI">ShowAutoPlaylistUI</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2285</div>
+        </header>
+        <pre class="signature"><code>ShowAutoPlaylistUI(playlistIndex)</code></pre>
+        
+        <div class="description"><p>Shows popup window letting you edit certain autoplaylist properties.<br> Before using, check if your playlist is an autoplaylist by using <a href="plman.html#IsAutoPlaylist">plman.IsAutoPlaylist</a>;</p></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>boolean</code></div>
+        </section>
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>playlistIndex</b> is out of bounds.</p></div>
+        </section>
+        
+        
+        <section class="member-section">
+            <h3>Example</h3>
+            <pre class="example"><code>fb.ShowAutoPlaylistUI(plman.ActivePlaylist);</code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="ShowPlaylistLockUI" data-kind="method" data-name="showplaylistlockui">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span></div>
+                <h2><a class="anchor" href="#ShowPlaylistLockUI">ShowPlaylistLockUI</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2298</div>
+        </header>
+        <pre class="signature"><code>ShowPlaylistLockUI(playlistIndex, window_id)</code></pre>
+        
+        <div class="description"><p>Shows popup window letting you set various locks on playlist with specified index</p></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr><tr><td><code>window_id = 0</code><span class="mini-flag">optional</span></td><td><code>number</code></td><td><p>Native window handle (HWND) to use as the dialog owner. Pass 0 to use the default foobar2000 window.</p></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>playlistIndex</b> is invalid or the panel host is not fully initialized.</p></div>
+        </section>
+        
+        
+        <section class="member-section">
+            <h3>Example</h3>
+            <pre class="example"><code>fb.ShowPlaylistLockUI(plman.ActivePlaylist);</code></pre>
+        </section>
+        
+    </article>
+
+    <article class="api-item" id="SortByFormat" data-kind="method" data-name="sortbyformat">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#SortByFormat">SortByFormat</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2310</div>
+        </header>
+        <pre class="signature"><code>SortByFormat(playlistIndex, pattern, selected_items_only)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td><p>Index of playlist to alter.</p></td></tr><tr><td><code>pattern</code></td><td><code>string</code></td><td><p>Title formatting pattern to sort by. Set to "" to randomise the order of items.</p></td></tr><tr><td><code>selected_items_only = false</code><span class="mini-flag">optional</span></td><td><code>boolean</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>boolean</code> — <p>true on success, false on failure (playlist locked etc).</p></div>
+        </section>
+        
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="SortByFormatV2" data-kind="method" data-name="sortbyformatv2">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#SortByFormatV2">SortByFormatV2</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2320</div>
+        </header>
+        <pre class="signature"><code>SortByFormatV2(playlistIndex, pattern, direction)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td><p>Index of playlist to alter.</p></td></tr><tr><td><code>pattern</code></td><td><code>string</code></td><td><p>Title formatting pattern to sort by.</p></td></tr><tr><td><code>direction = 1</code><span class="mini-flag">optional</span></td><td><code>number</code></td><td><p>1 - ascending<br> -1 - descending<br></p></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Returns</h3>
+            <div><code>boolean</code></div>
+        </section>
+        
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="SortPlaylistsByName" data-kind="method" data-name="sortplaylistsbyname">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#SortPlaylistsByName">SortPlaylistsByName</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2332</div>
+        </header>
+        <pre class="signature"><code>SortPlaylistsByName(direction)</code></pre>
+        
+        <div class="description"></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>direction = 1</code><span class="mini-flag">optional</span></td><td><code>number</code></td><td><p>1 - ascending<br> -1 - descending<br></p></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="Undo" data-kind="method" data-name="undo">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#Undo">Undo</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2341</div>
+        </header>
+        <pre class="signature"><code>Undo(playlistIndex)</code></pre>
+        
+        <div class="description"><p>Reverts specified playlist to the last undo restore point and generates a redo restore point.<br> Note: revert operation may be not applied if the corresponding action is locked. Use <a href="plman.html#GetPlaylistLockedActions">plman.GetPlaylistLockedActions</a> to check if there are any locks present.<br> <br> Related methods: <a href="plman.html#IsRedoAvailable">plman.IsRedoAvailable</a>, <a href="plman.html#IsUndoAvailable">plman.IsUndoAvailable</a>, <a href="plman.html#Redo">plman.Redo</a>, <a href="plman.html#UndoBackup">plman.UndoBackup</a></p></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>playlistIndex</b> is out of bounds or undo is not available.</p></div>
+        </section>
+        
+        
+        
+    </article>
+
+    <article class="api-item" id="UndoBackup" data-kind="method" data-name="undobackup">
+        <header class="api-item-header">
+            <div>
+                <div class="eyebrow"><span class="kind kind-method">method</span><span class="flag capability worker" title="Available inside a Worker.">WORKER</span><span class="flag capability main-thread" title="Available in Worker, but the host operation executes on the foobar2000 main thread.">MAIN THREAD</span></div>
+                <h2><a class="anchor" href="#UndoBackup">UndoBackup</a></h2>
+            </div>
+            <div class="source-location">js/foo_uie_jsplitter.js:2355</div>
+        </header>
+        <pre class="signature"><code>UndoBackup(playlistIndex)</code></pre>
+        
+        <div class="description"><p>Creates an undo restore point for the specified playlist. This will enable <b>Edit</b>><b>Undo</b> menu item after calling other <a href="plman.html#plman">plman</a> methods that change playlist content.<br> Note: this method should be called before performing modification to the playlist.<br> <br> Related methods: <a href="plman.html#IsRedoAvailable">plman.IsRedoAvailable</a>, <a href="plman.html#IsUndoAvailable">plman.IsUndoAvailable</a>, <a href="plman.html#Redo">plman.Redo</a>, <a href="plman.html#Undo">plman.Undo</a></p></div>
+        
+        <section class="member-section">
+            <h3>Parameters</h3>
+            <div class="table-wrap"><table class="params-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody><tr><td><code>playlistIndex</code></td><td><code>number</code></td><td></td></tr></tbody>
+            </table></div>
+        </section>
+        
+        
+        
+        
+        <section class="member-section compact-section">
+            <h3>Throws</h3>
+            <div><code><a class="type-link" href="globals.html#Error">Error</a></code> — <p>If <b>playlistIndex</b> is out of bounds.</p></div>
+        </section>
+        
+        
+        
+    </article></main>
+    <script src="assets/search-data.js"></script><script src="assets/app.js"></script>
+</body>
+</html>

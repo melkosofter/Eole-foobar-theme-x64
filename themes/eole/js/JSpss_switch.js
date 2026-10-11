@@ -94,19 +94,7 @@ oPanelSetting = function (name, file_prefix, default_value, min_value, max_value
 	}		
 	this.getFileValue();
 }
-function RefreshPSS() {
-	if (fb.IsPlaying || fb.IsPaused) {
-		try{
-			let handle = fb.GetNowPlaying();
-			handle.RefreshStats();
-		} catch(e){
-			fb.Play();fb.Stop();
-		}
-	}	
-	else {
-		fb.Play();fb.Stop();
-	}	
-}	
+function RefreshPSS() { window.NotifyOthers("eole_x64_layout", true); }
 function RefreshPSS_old() {
 	if (fb.IsPaused) {
 		fb.Play();

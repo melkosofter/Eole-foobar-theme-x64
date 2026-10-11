@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="x-ua-compatible" content="IE=11" />
+    <meta charset="utf-8" />
+    <title>ShowHtmlDialog sample</title>
+    <style type="text/css">
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        body {
+            font-family: "Segoe UI", sans-serif;
+            font-size: 13px;
+            color: #202020;
+            background: #f3f3f3;
+        }
+
+        .dialog {
+            box-sizing: border-box;
+            height: 100%;
+            padding: 20px 22px;
+        }
+
+        .title {
+            margin: 0 0 4px 0;
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: 600;
+        }
+
+        .description {
+            margin: 0;
+            color: #616161;
+            line-height: 19px;
+        }
+
+        .field-label {
+            display: block;
+            margin: 16px 0 6px 0;
+            font-weight: 600;
+        }
+
+        .text-field {
+            box-sizing: border-box;
+            width: 100%;
+            height: 34px;
+            padding: 6px 9px;
+            font: 13px "Segoe UI", sans-serif;
+            color: #202020;
+            background: #ffffff;
+            border: 1px solid #b8b8b8;
+            border-radius: 4px;
+        }
+
+        .text-field:hover {
+            border-color: #808080;
+        }
+
+        .text-field:focus {
+            outline: none;
+            border-color: #0067c0;
+            box-shadow: 0 0 0 1px #0067c0;
+        }
+
+        .check-row {
+            margin-top: 13px;
+            color: #333333;
+        }
+
+        .check-row input {
+            margin: 0 6px 0 0;
+            vertical-align: -2px;
+        }
+
+        .footer {
+            height: 34px;
+            margin-top: 18px;
+        }
+
+        button {
+            box-sizing: border-box;
+            min-width: 96px;
+            height: 34px;
+            padding: 0 14px;
+            font: 13px "Segoe UI", sans-serif;
+            border-radius: 4px;
+            cursor: default;
+        }
+
+        .secondary {
+            float: left;
+            color: #202020;
+            background: #ffffff;
+            border: 1px solid #b8b8b8;
+        }
+
+        .secondary:hover {
+            background: #e9e9e9;
+            border-color: #8c8c8c;
+        }
+
+        .primary {
+            float: right;
+            color: #ffffff;
+            background: #0067c0;
+            border: 1px solid #0067c0;
+        }
+
+        .primary:hover {
+            background: #005a9e;
+            border-color: #005a9e;
+        }
+
+        button:focus {
+            outline: 1px dotted #202020;
+            outline-offset: -4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dialog">
+        <div id="title" class="title">ShowHtmlDialog sample</div>
+        <p id="description" class="description"></p>
+
+        <label class="field-label" for="value">Value from panel JavaScript</label>
+        <input id="value" class="text-field" type="text" />
+
+        <div class="check-row">
+            <input id="checkbox" type="checkbox" />
+            <label id="checkbox-label" for="checkbox">Remember this choice</label>
+        </div>
+
+        <div class="footer">
+            <button id="native" class="secondary">Native dialog</button>
+            <button id="ok" class="primary">OK</button>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var args = null;
+        var callbackFn = null;
+        var nativeDialogFn = null;
+        var closedManually = false;
+
+        try {
+            args = window.external.dialogArguments.toArray();
+        }
+        catch (e) {
+        }
+
+        if (args) {
+            document.title = args[0];
+            document.getElementById("title").innerText = args[0];
+            document.getElementById("description").innerText = args[1];
+            document.getElementById("value").value = args[2];
+            document.getElementById("checkbox-label").innerText = args[3];
+            nativeDialogFn = args[4];
+            callbackFn = args[5];
+        }
+
+        function closeDialog(status) {
+            if (closedManually) {
+                return;
+            }
+
+            closedManually = true;
+
+            if (callbackFn) {
+                callbackFn(
+                    status,
+                    document.getElementById("value").value,
+                    document.getElementById("checkbox").checked
+                );
+            }
+
+            window.open("", "_self", "");
+            window.close();
+        }
+
+        document.getElementById("native").onclick = function () {
+            if (nativeDialogFn) {
+                nativeDialogFn(window.external.dialogWindow);
+            }
+        };
+
+        document.getElementById("ok").onclick = function () {
+            closeDialog("ok");
+        };
+
+        window.onunload = function () {
+            if (!closedManually && callbackFn) {
+                callbackFn(
+                    "cancel",
+                    document.getElementById("value").value,
+                    document.getElementById("checkbox").checked
+                );
+            }
+        };
+
+        document.onkeydown = function (e) {
+            e = e || window.event;
+
+            if (e.keyCode === 13) {
+                closeDialog("ok");
+            }
+            else if (e.keyCode === 27) {
+                window.close();
+            }
+        };
+
+        document.getElementById("value").focus();
+        document.getElementById("value").select();
+    </script>
+</body>
+</html>

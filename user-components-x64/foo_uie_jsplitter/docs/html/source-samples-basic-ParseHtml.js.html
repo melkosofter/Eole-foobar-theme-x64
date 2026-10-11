@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ParseHtml.js — JSplitter source example</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <a class="brand" href="index.html">JSplitter API</a>
+        <div class="search-box">
+            <input id="doc-search" type="search" placeholder="Search API" autocomplete="off">
+            <div id="search-results" class="search-results" hidden></div>
+        </div>
+        <nav class="nav-groups">
+            <div class="nav-page-tree" data-nav-root="__globals__">
+        <a class="nav-link nav-page-link" href="globals.html">Globals</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div>
+            <div class="nav-group"><div class="nav-title">Namespaces</div><div class="nav-page-tree" data-nav-root="console">
+        <a class="nav-link nav-page-link" href="console.html">console</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="d2d">
+        <a class="nav-link nav-page-link" href="d2d.html">d2d</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="fb">
+        <a class="nav-link nav-page-link" href="fb.html">fb</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="gdi">
+        <a class="nav-link nav-page-link" href="gdi.html">gdi</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="performance">
+        <a class="nav-link nav-page-link" href="performance.html">performance</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="plman">
+        <a class="nav-link nav-page-link" href="plman.html">plman</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="utils">
+        <a class="nav-link nav-page-link" href="utils.html">utils</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="window">
+        <a class="nav-link nav-page-link" href="window.html">window</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div></div><div class="nav-group"><div class="nav-title">Classes</div><div class="nav-page-tree" data-nav-root="ActiveXObject">
+        <a class="nav-link nav-page-link" href="ActiveXObject.html">ActiveXObject</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="BinaryReader">
+        <a class="nav-link nav-page-link" href="BinaryReader.html">BinaryReader</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="BinaryWriter">
+        <a class="nav-link nav-page-link" href="BinaryWriter.html">BinaryWriter</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="BroadcastChannel">
+        <a class="nav-link nav-page-link" href="BroadcastChannel.html">BroadcastChannel</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="ButtonObject">
+        <a class="nav-link nav-page-link" href="ButtonObject.html">ButtonObject</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="ContextMenuManager">
+        <a class="nav-link nav-page-link" href="ContextMenuManager.html">ContextMenuManager</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="D2DBitmap">
+        <a class="nav-link nav-page-link" href="D2DBitmap.html">D2DBitmap</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="D2DBrush">
+        <a class="nav-link nav-page-link" href="D2DBrush.html">D2DBrush</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="D2DCompileInfo">
+        <a class="nav-link nav-page-link" href="D2DCompileInfo.html">D2DCompileInfo</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="D2DEffect">
+        <a class="nav-link nav-page-link" href="D2DEffect.html">D2DEffect</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="D2DFont">
+        <a class="nav-link nav-page-link" href="D2DFont.html">D2DFont</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="D2DGraphics">
+        <a class="nav-link nav-page-link" href="D2DGraphics.html">D2DGraphics</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="D2DStrokeStyle">
+        <a class="nav-link nav-page-link" href="D2DStrokeStyle.html">D2DStrokeStyle</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="DriveInfo">
+        <a class="nav-link nav-page-link" href="DriveInfo.html">DriveInfo</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="DropTargetAction">
+        <a class="nav-link nav-page-link" href="DropTargetAction.html">DropTargetAction</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="Enumerator">
+        <a class="nav-link nav-page-link" href="Enumerator.html">Enumerator</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="ErrorEvent">
+        <a class="nav-link nav-page-link" href="ErrorEvent.html">ErrorEvent</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="Event">
+        <a class="nav-link nav-page-link" href="Event.html">Event</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="EventTarget">
+        <a class="nav-link nav-page-link" href="EventTarget.html">EventTarget</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbAudioChunk">
+        <a class="nav-link nav-page-link" href="FbAudioChunk.html">FbAudioChunk</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbFileInfo">
+        <a class="nav-link nav-page-link" href="FbFileInfo.html">FbFileInfo</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbMetadbHandle">
+        <a class="nav-link nav-page-link" href="FbMetadbHandle.html">FbMetadbHandle</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbMetadbHandleList">
+        <a class="nav-link nav-page-link" href="FbMetadbHandleList.html">FbMetadbHandleList</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbPlaybackQueueItem">
+        <a class="nav-link nav-page-link" href="FbPlaybackQueueItem.html">FbPlaybackQueueItem</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbPlayingItemLocation">
+        <a class="nav-link nav-page-link" href="FbPlayingItemLocation.html">FbPlayingItemLocation</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbPlaylistRecycler">
+        <a class="nav-link nav-page-link" href="FbPlaylistRecycler.html">FbPlaylistRecycler</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbProfiler">
+        <a class="nav-link nav-page-link" href="FbProfiler.html">FbProfiler</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbTitleFormat">
+        <a class="nav-link nav-page-link" href="FbTitleFormat.html">FbTitleFormat</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbTooltip">
+        <a class="nav-link nav-page-link" href="FbTooltip.html">FbTooltip</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbUiSelectionHolder">
+        <a class="nav-link nav-page-link" href="FbUiSelectionHolder.html">FbUiSelectionHolder</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="FbWindow">
+        <a class="nav-link nav-page-link" href="FbWindow.html">FbWindow</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="GdiBitmap">
+        <a class="nav-link nav-page-link" href="GdiBitmap.html">GdiBitmap</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="GdiBrush">
+        <a class="nav-link nav-page-link" href="GdiBrush.html">GdiBrush</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="GdiFont">
+        <a class="nav-link nav-page-link" href="GdiFont.html">GdiFont</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="GdiGraphics">
+        <a class="nav-link nav-page-link" href="GdiGraphics.html">GdiGraphics</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="GdiRawBitmap">
+        <a class="nav-link nav-page-link" href="GdiRawBitmap.html">GdiRawBitmap</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="HtmlDocument">
+        <a class="nav-link nav-page-link" href="HtmlDocument.html">HtmlDocument</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="HtmlNode">
+        <a class="nav-link nav-page-link" href="HtmlNode.html">HtmlNode</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="MainMenuManager">
+        <a class="nav-link nav-page-link" href="MainMenuManager.html">MainMenuManager</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="MenuObject">
+        <a class="nav-link nav-page-link" href="MenuObject.html">MenuObject</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="MessageEvent">
+        <a class="nav-link nav-page-link" href="MessageEvent.html">MessageEvent</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="PanelObject">
+        <a class="nav-link nav-page-link" href="PanelObject.html">PanelObject</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="PerformanceObserver">
+        <a class="nav-link nav-page-link" href="PerformanceObserver.html">PerformanceObserver</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="PerformanceObserverEntryList">
+        <a class="nav-link nav-page-link" href="PerformanceObserverEntryList.html">PerformanceObserverEntryList</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="PromiseRejectionEvent">
+        <a class="nav-link nav-page-link" href="PromiseRejectionEvent.html">PromiseRejectionEvent</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="RunResult">
+        <a class="nav-link nav-page-link" href="RunResult.html">RunResult</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="SQLiteDatabase">
+        <a class="nav-link nav-page-link" href="SQLiteDatabase.html">SQLiteDatabase</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="SQLiteStatement">
+        <a class="nav-link nav-page-link" href="SQLiteStatement.html">SQLiteStatement</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="TextReader">
+        <a class="nav-link nav-page-link" href="TextReader.html">TextReader</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="TextWriter">
+        <a class="nav-link nav-page-link" href="TextWriter.html">TextWriter</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="ThemeManager">
+        <a class="nav-link nav-page-link" href="ThemeManager.html">ThemeManager</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="Worker">
+        <a class="nav-link nav-page-link" href="Worker.html">Worker</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="WorkerGlobalScope">
+        <a class="nav-link nav-page-link" href="WorkerGlobalScope.html">WorkerGlobalScope</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div></div><div class="nav-group"><div class="nav-title">Modules</div><div class="nav-page-tree" data-nav-root="module:Callbacks">
+        <a class="nav-link nav-page-link" href="module-Callbacks.html">Callbacks</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="module:Codepages">
+        <a class="nav-link nav-page-link" href="module-Codepages.html">Codepages</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="module:Effects">
+        <a class="nav-link nav-page-link" href="module-Effects.html">Effects</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><a class="nav-link" href="module-ESModules.html">ESModules</a><div class="nav-page-tree" data-nav-root="module:Flags">
+        <a class="nav-link nav-page-link" href="module-Flags.html">Flags</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="module:Helpers">
+        <a class="nav-link nav-page-link" href="module-Helpers.html">Helpers</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><div class="nav-page-tree" data-nav-root="module:Matrix">
+        <a class="nav-link nav-page-link" href="module-Matrix.html">Matrix</a>
+        <div class="nav-page-members" data-nav-members hidden></div>
+    </div><a class="nav-link" href="module-TitleFormatting.html">TitleFormatting</a><a class="nav-link" href="module-WebAssembly.html">WebAssembly</a></div>
+            <div class="nav-group"><div class="nav-title">Tools</div><a class="nav-link " href="audit.html">Documentation audit</a></div>
+        </nav></aside>
+    <main class="content">
+        <div class="page-top"><a href="index.html">Documentation</a><span>/</span><b>Source example</b></div>
+        <header class="source-header">
+            <div class="eyebrow">Example source</div>
+            <h1>samples/basic/ParseHtml.js</h1>
+            <div class="source-references"><b>Referenced by:</b><a href="utils.html#ParseHtml">utils.ParseHtml</a></div>
+        </header>
+        <pre class="source-code"><code><span class="tok-comment">//</span>
+<span class="tok-comment">// Demonstrates utils.ParseHtml(), HtmlDocument, and HtmlNode.</span>
+<span class="tok-comment">//</span>
+
+<span class="tok-keyword">function</span> log_section(title) {
+    console.log(<span class="tok-string">&quot;&quot;</span>);
+    console.log(<span class="tok-string">&quot;=== &quot;</span> + title + <span class="tok-string">&quot; ===&quot;</span>);
+}
+
+<span class="tok-keyword">function</span> normalize_text(s) {
+    <span class="tok-keyword">return</span> (s || <span class="tok-string">&quot;&quot;</span>).replace(/\s+/g, <span class="tok-string">&quot; &quot;</span>).trim();
+}
+
+<span class="tok-comment">// This example uses the same structure as samples/basic/html/parse_test.html.</span>
+<span class="tok-comment">// const html = utils.ReadUTF8(`${fb.ComponentPath}\\samples\\basic\\html\\parse_test.html`);</span>
+<span class="tok-keyword">const</span> html = <span class="tok-string">`
+&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+	&lt;meta charset=&quot;utf-8&quot;&gt;
+	&lt;title&gt;Lexbor Parser Test&lt;/title&gt;
+	&lt;meta property=&quot;og:title&quot; content=&quot;Test Artist Biography&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;main id=&quot;page&quot; class=&quot;artist-page biography&quot;&gt;
+		&lt;h1 class=&quot;artist-name&quot;&gt;Test Artist&lt;/h1&gt;
+
+		&lt;section class=&quot;wiki-content&quot; data-source=&quot;lastfm&quot;&gt;
+			&lt;p&gt;
+				Test Artist is an experimental music project from London.
+				The project combines &lt;strong&gt;ambient&lt;/strong&gt;, &lt;em&gt;industrial&lt;/em&gt;,
+				and electronic music.
+			&lt;/p&gt;
+
+			&lt;p&gt;
+				Their first album,
+				&lt;a href=&quot;/music/Test+Artist/First+Album&quot; class=&quot;album-link&quot;&gt;First Album&lt;/a&gt;,
+				was released in 2020.
+			&lt;/p&gt;
+		&lt;/section&gt;
+
+		&lt;section class=&quot;albums&quot;&gt;
+			&lt;h2&gt;Albums&lt;/h2&gt;
+
+			&lt;ul class=&quot;album-list&quot;&gt;
+				&lt;li class=&quot;album&quot; data-year=&quot;2020&quot;&gt;
+					&lt;a href=&quot;/music/Test+Artist/First+Album&quot;&gt;First Album&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li class=&quot;album featured&quot; data-year=&quot;2022&quot;&gt;
+					&lt;a href=&quot;/music/Test+Artist/Second+Album&quot;&gt;Second Album&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li class=&quot;album&quot; data-year=&quot;2024&quot;&gt;
+					&lt;span&gt;No link album&lt;/span&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/section&gt;
+
+		&lt;section class=&quot;external-links&quot;&gt;
+			&lt;h2&gt;External links&lt;/h2&gt;
+
+			&lt;ul&gt;
+				&lt;li&gt;
+					text before link
+					&lt;a href=&quot;https://example.com/artist&quot; rel=&quot;external&quot;&gt;Official site&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;!-- comment before link --&gt;
+					&lt;a href=&quot;https://musicbrainz.org/artist/test&quot;&gt;MusicBrainz&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;span&gt;Broken item without href&lt;/span&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/section&gt;
+	&lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+`</span>;
+
+<span class="tok-keyword">const</span> doc = utils.ParseHtml(html);
+
+<span class="tok-keyword">if</span> (!doc) {
+    console.log(<span class="tok-string">&quot;Parse failed.&quot;</span>);
+} <span class="tok-keyword">else</span> {
+    log_section(<span class="tok-string">&quot;Document basics&quot;</span>);
+
+    console.log(<span class="tok-string">&quot;documentElement tag:&quot;</span>, doc.documentElement.tagName); <span class="tok-comment">// html</span>
+    console.log(<span class="tok-string">&quot;root tag:&quot;</span>, doc.root.tagName);                       <span class="tok-comment">// html</span>
+    console.log(<span class="tok-string">&quot;head innerHTML:&quot;</span>, normalize_text(doc.head.innerHTML));
+    console.log(<span class="tok-string">&quot;body text:&quot;</span>, normalize_text(doc.body.textContent));
+
+    log_section(<span class="tok-string">&quot;querySelector&quot;</span>);
+
+    <span class="tok-keyword">const</span> title = doc.querySelector(<span class="tok-string">&quot;title&quot;</span>);
+    console.log(<span class="tok-string">&quot;title:&quot;</span>, title ? title.textContent : <span class="tok-string">&quot;&lt;missing&gt;&quot;</span>);
+
+    <span class="tok-keyword">const</span> artistName = doc.querySelector(<span class="tok-string">&quot;.artist-name&quot;</span>);
+    console.log(<span class="tok-string">&quot;artist:&quot;</span>, artistName ? artistName.textContent : <span class="tok-string">&quot;&lt;missing&gt;&quot;</span>);
+
+    <span class="tok-keyword">const</span> wiki = doc.querySelector(<span class="tok-string">&quot;.wiki-content&quot;</span>);
+    <span class="tok-keyword">if</span> (wiki) {
+        console.log(<span class="tok-string">&quot;wiki source:&quot;</span>, wiki.getAttribute(<span class="tok-string">&quot;data-source&quot;</span>)); <span class="tok-comment">// lastfm</span>
+        console.log(<span class="tok-string">&quot;wiki text:&quot;</span>, normalize_text(wiki.textContent));
+    }
+
+    log_section(<span class="tok-string">&quot;querySelectorAll&quot;</span>);
+
+    <span class="tok-keyword">const</span> albums = doc.querySelectorAll(<span class="tok-string">&quot;.album&quot;</span>);
+    console.log(<span class="tok-string">&quot;albums count:&quot;</span>, albums.length); <span class="tok-comment">// 3</span>
+
+    <span class="tok-keyword">for</span> (<span class="tok-keyword">let</span> i = <span class="tok-number">0</span>; i &lt; albums.length; i++) {
+        <span class="tok-keyword">const</span> album = albums[i];
+        <span class="tok-keyword">const</span> link = album.querySelector(<span class="tok-string">&quot;a&quot;</span>);
+
+        console.log(
+            <span class="tok-string">&quot;album #&quot;</span> + (i + <span class="tok-number">1</span>) + <span class="tok-string">&quot;:&quot;</span>,
+            <span class="tok-string">&quot;year=&quot;</span> + album.getAttribute(<span class="tok-string">&quot;data-year&quot;</span>),
+            <span class="tok-string">&quot;featured=&quot;</span> + album.hasClass(<span class="tok-string">&quot;featured&quot;</span>),
+            <span class="tok-string">&quot;title=&quot;</span> + (link ? normalize_text(link.textContent) : normalize_text(album.textContent)),
+            <span class="tok-string">&quot;href=&quot;</span> + (link ? link.getAttribute(<span class="tok-string">&quot;href&quot;</span>) : <span class="tok-string">&quot;&lt;no link&gt;&quot;</span>)
+        );
+    }
+
+    log_section(<span class="tok-string">&quot;Attribute selectors&quot;</span>);
+
+    <span class="tok-keyword">const</span> nodesWithClass = doc.querySelectorAll(<span class="tok-string">&quot;[class]&quot;</span>);
+    console.log(<span class="tok-string">&quot;nodes with class:&quot;</span>, nodesWithClass.length);
+
+    <span class="tok-keyword">const</span> featuredAlbums = doc.querySelectorAll(<span class="tok-string">&quot;.album.featured&quot;</span>);
+    console.log(<span class="tok-string">&quot;featured albums:&quot;</span>, featuredAlbums.length);
+
+    <span class="tok-keyword">const</span> albumToken = doc.querySelectorAll(<span class="tok-string">&quot;[class~=&#39;album&#39;]&quot;</span>);
+    console.log(<span class="tok-string">&quot;[class~=&#39;album&#39;]:&quot;</span>, albumToken.length);
+
+    log_section(<span class="tok-string">&quot;getElementsByTagName&quot;</span>);
+
+    <span class="tok-keyword">const</span> allLinks = doc.getElementsByTagName(<span class="tok-string">&quot;a&quot;</span>);
+    console.log(<span class="tok-string">&quot;all links:&quot;</span>, allLinks.length);
+
+    <span class="tok-keyword">for</span> (<span class="tok-keyword">let</span> i = <span class="tok-number">0</span>; i &lt; allLinks.length; i++) {
+        console.log(
+            <span class="tok-string">&quot;#&quot;</span> + (i + <span class="tok-number">1</span>),
+            normalize_text(allLinks[i].textContent),
+            <span class="tok-string">&quot;=&gt;&quot;</span>,
+            allLinks[i].getAttribute(<span class="tok-string">&quot;href&quot;</span>)
+        );
+    }
+
+    log_section(<span class="tok-string">&quot;children vs childNodes&quot;</span>);
+
+    <span class="tok-keyword">const</span> p = doc.querySelector(<span class="tok-string">&quot;.wiki-content p&quot;</span>);
+
+    console.log(<span class="tok-string">&quot;p.children.length:&quot;</span>, p.children.length);
+    console.log(<span class="tok-string">&quot;p.childNodes.length:&quot;</span>, p.childNodes.length);
+
+    <span class="tok-comment">// firstChild is a text node here. JSON.stringify() is used intentionally</span>
+    <span class="tok-comment">// to show that original whitespace and line breaks are preserved.</span>
+    console.log(<span class="tok-string">&quot;p.firstChild text:&quot;</span>, JSON.stringify(p.firstChild.textContent));
+
+    log_section(<span class="tok-string">&quot;Safe link extraction&quot;</span>);
+
+    <span class="tok-keyword">const</span> externalItems = doc.querySelectorAll(<span class="tok-string">&quot;.external-links li&quot;</span>);
+
+    <span class="tok-keyword">for</span> (<span class="tok-keyword">let</span> i = <span class="tok-number">0</span>; i &lt; externalItems.length; i++) {
+        <span class="tok-keyword">const</span> li = externalItems[i];
+
+        <span class="tok-comment">// Do not use li.firstChild.getAttribute(&quot;href&quot;):</span>
+        <span class="tok-comment">// firstChild can be a text node or a comment.</span>
+        <span class="tok-keyword">const</span> a = li.querySelector(<span class="tok-string">&quot;a[href]&quot;</span>);
+
+        <span class="tok-keyword">if</span> (!a) {
+            console.log(<span class="tok-string">&quot;external item #&quot;</span> + (i + <span class="tok-number">1</span>) + <span class="tok-string">&quot;: no link&quot;</span>);
+            <span class="tok-keyword">continue</span>;
+        }
+
+        console.log(
+            <span class="tok-string">&quot;external item #&quot;</span> + (i + <span class="tok-number">1</span>) + <span class="tok-string">&quot;:&quot;</span>,
+            normalize_text(a.textContent),
+            <span class="tok-string">&quot;=&gt;&quot;</span>,
+            a.getAttribute(<span class="tok-string">&quot;href&quot;</span>)
+        );
+    }
+
+    log_section(<span class="tok-string">&quot;Missing nodes&quot;</span>);
+
+    console.log(<span class="tok-string">&quot;missing node:&quot;</span>, doc.querySelector(<span class="tok-string">&quot;.missing&quot;</span>));          <span class="tok-comment">// null</span>
+    console.log(<span class="tok-string">&quot;missing list length:&quot;</span>, doc.querySelectorAll(<span class="tok-string">&quot;.missing&quot;</span>).length); <span class="tok-comment">// 0</span>
+}
+</code></pre></main>
+    <script src="assets/search-data.js"></script><script src="assets/app.js"></script>
+</body>
+</html>
